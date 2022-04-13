@@ -1,0 +1,61 @@
+time,elapsed_seconds,message
+2021-11-08 02:27:50,4.0935e-05,PEST++ performance logger started
+2021-11-08 02:27:50,0.00151315,starting to process control file
+2021-11-08 02:27:50,0.00770948,finished processing control file
+2021-11-08 02:27:50,0.0162309,initializing constraints
+2021-11-08 02:27:50,0.000228921,initializing chance constraints/objectives
+2021-11-08 02:45:08,1038.6,set_predictions
+2021-11-08 02:45:08,2.3446e-05,extracting prediction ZMUNI1_PCT from jacobian
+2021-11-08 02:45:08,0.000121955,extracting prediction ZMUNI2_PCT from jacobian
+2021-11-08 02:45:08,0.00010564,extracting prediction ZMUNI3_PCT from jacobian
+2021-11-08 02:45:08,9.7613e-05,extracting prediction ZMUNI4_PCT from jacobian
+2021-11-08 02:45:08,8.7949e-05,extracting prediction ZMUNI5_PCT from jacobian
+2021-11-08 02:45:08,7.8684e-05,extracting prediction ZMUNI6_PCT from jacobian
+2021-11-08 02:45:08,7.3338e-05,extracting prediction ZMUNI7_PCT from jacobian
+2021-11-08 02:45:08,6.4877e-05,extracting prediction ZMUNI8_PCT from jacobian
+2021-11-08 02:45:08,5.7248e-05,extracting prediction ZMUNI9_PCT from jacobian
+2021-11-08 02:45:08,8.8802e-05,LinearAnalysis::prior_prediction_variance
+2021-11-08 03:11:26,1577.71,set_predictions
+2021-11-08 03:11:26,2.7125e-05,extracting prediction ZMUNI1_PCT from jacobian
+2021-11-08 03:11:26,0.000129335,extracting prediction ZMUNI2_PCT from jacobian
+2021-11-08 03:11:26,0.000118249,extracting prediction ZMUNI3_PCT from jacobian
+2021-11-08 03:11:26,9.7486e-05,extracting prediction ZMUNI4_PCT from jacobian
+2021-11-08 03:11:26,8.615e-05,extracting prediction ZMUNI5_PCT from jacobian
+2021-11-08 03:11:26,7.8466e-05,extracting prediction ZMUNI6_PCT from jacobian
+2021-11-08 03:11:26,7.2605e-05,extracting prediction ZMUNI7_PCT from jacobian
+2021-11-08 03:11:26,6.4601e-05,extracting prediction ZMUNI8_PCT from jacobian
+2021-11-08 03:11:26,5.7126e-05,extracting prediction ZMUNI9_PCT from jacobian
+2021-11-08 03:11:26,3.1109e-05,LinearAnalysis::prior_prediction_variance
+2021-11-08 03:37:37,1570.68,set_predictions
+2021-11-08 03:37:37,2.4473e-05,extracting prediction ZMUNI1_PCT from jacobian
+2021-11-08 03:37:37,0.000120777,extracting prediction ZMUNI2_PCT from jacobian
+2021-11-08 03:37:37,0.000105686,extracting prediction ZMUNI3_PCT from jacobian
+2021-11-08 03:37:37,9.7717e-05,extracting prediction ZMUNI4_PCT from jacobian
+2021-11-08 03:37:37,8.6618e-05,extracting prediction ZMUNI5_PCT from jacobian
+2021-11-08 03:37:37,7.8653e-05,extracting prediction ZMUNI6_PCT from jacobian
+2021-11-08 03:37:37,7.2602e-05,extracting prediction ZMUNI7_PCT from jacobian
+2021-11-08 03:37:37,6.5306e-05,extracting prediction ZMUNI8_PCT from jacobian
+2021-11-08 03:37:37,5.73e-05,extracting prediction ZMUNI9_PCT from jacobian
+2021-11-08 03:37:37,3.1178e-05,LinearAnalysis::prior_prediction_variance
+2021-11-08 04:03:45,1567.8,set_predictions
+2021-11-08 04:03:45,2.313e-05,extracting prediction ZMUNI1_PCT from jacobian
+2021-11-08 04:03:45,0.000123639,extracting prediction ZMUNI2_PCT from jacobian
+2021-11-08 04:03:45,0.000116862,extracting prediction ZMUNI3_PCT from jacobian
+2021-11-08 04:03:45,9.9994e-05,extracting prediction ZMUNI4_PCT from jacobian
+2021-11-08 04:03:45,8.783e-05,extracting prediction ZMUNI5_PCT from jacobian
+2021-11-08 04:03:45,7.9719e-05,extracting prediction ZMUNI6_PCT from jacobian
+2021-11-08 04:03:45,7.35e-05,extracting prediction ZMUNI7_PCT from jacobian
+2021-11-08 04:03:45,6.539e-05,extracting prediction ZMUNI8_PCT from jacobian
+2021-11-08 04:03:45,5.7324e-05,extracting prediction ZMUNI9_PCT from jacobian
+2021-11-08 04:03:45,3.1619e-05,LinearAnalysis::prior_prediction_variance
+2021-11-08 04:29:51,1566.8,set_predictions
+2021-11-08 04:29:51,2.3466e-05,extracting prediction ZMUNI1_PCT from jacobian
+2021-11-08 04:29:51,0.000121912,extracting prediction ZMUNI2_PCT from jacobian
+2021-11-08 04:29:51,0.000106652,extracting prediction ZMUNI3_PCT from jacobian
+2021-11-08 04:29:51,9.8084e-05,extracting prediction ZMUNI4_PCT from jacobian
+2021-11-08 04:29:51,8.7678e-05,extracting prediction ZMUNI5_PCT from jacobian
+2021-11-08 04:29:51,7.9122e-05,extracting prediction ZMUNI6_PCT from jacobian
+2021-11-08 04:29:51,7.9236e-05,extracting prediction ZMUNI7_PCT from jacobian
+2021-11-08 04:29:51,6.5316e-05,extracting prediction ZMUNI8_PCT from jacobian
+2021-11-08 04:29:51,5.7801e-05,extracting prediction ZMUNI9_PCT from jacobian
+2021-11-08 04:29:51,3.1461e-05,LinearAnalysis::prior_prediction_variance

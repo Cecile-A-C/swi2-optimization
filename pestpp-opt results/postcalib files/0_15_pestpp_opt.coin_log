@@ -1,0 +1,138 @@
+Coin0513I 0 rows dropped after presolve pass 1
+Coin0506I Presolve 9 (0) rows, 9 (0) columns and 81 (0) elements
+Coin0505I Presolved problem not optimal, resolve after postsolve
+Coin0511I After Postsolve, objective 0, infeasibilities - dual 8.9999991 (9), primal 18.361961 (2)
+Clp1001I Initial range of elements is 0.1908 to 97497.368
+Clp1002I Range of elements is 0.0027311782 to 366.14235
+Clp1002I Range of elements is 0.013836857 to 72.27075
+Clp1003I Final range of elements is 0.01601139 to 62.455539
+Clp0022I Absolute values of scaled rhs range from 8.5726639e-05 to 0.028136724, minimum gap 1e+100
+Clp0020I Absolute values of scaled objective range from 0.14305124 to 4.9164273
+Clp0021I Absolute values of scaled bounds range from 0.00010169985 to 7.6895526e+10, minimum gap 2.2373971e+09
+Clp0060I Primal error 0, dual error 0
+Clp0060I Primal error 0, dual error 0
+Clp0006I 0  Obj -0.004499999 Dual inf 17.874669 (9)
+Clp0060I Primal error 0, dual error 0
+Clp0060I Primal error 0, dual error 0
+Clp0006I 0  Obj -0.004499999 Dual inf 17.874669 (9)
+Clp0101I dirOut -1, dirIn 1, theta 0.00023630987, out 0, dj -4.9164273, alpha -62.455539
+Clp0102I 1 -0.0033381987 In: C0 Out: R0 dj -4.9164273 distance 0.00023630987
+Clp0101I dirOut -1, dirIn 1, theta 0.00024933922, out 0, dj -2.9933227, alpha -62.319042
+Clp0102I 2 -0.002591846 In: C1 Out: R1 dj -2.9933227 distance 0.00024933922
+Clp0101I dirOut -1, dirIn 1, theta 0.0002269726, out 0, dj -2.2916982, alpha -62.327887
+Clp0102I 3 -0.0020716933 In: C7 Out: R7 dj -2.2916982 distance 0.0002269726
+Clp0101I dirOut -1, dirIn 1, theta 0.00039509654, out 0, dj -1.9397266, alpha -62.453136
+Clp0102I 4 -0.001305314 In: C5 Out: R5 dj -1.9397266 distance 0.00039509654
+Clp0101I dirOut -1, dirIn 1, theta 0.00039378114, out 0, dj -1.5517285, alpha -61.01951
+Clp0102I 5 -0.00069427257 In: C2 Out: R2 dj -1.5517285 distance 0.00039378114
+Clp0101I dirOut -1, dirIn 1, theta 0.00024108975, out 0, dj -1.3111301, alpha -61.809115
+Clp0102I 6 -0.00037817253 In: C6 Out: R6 dj -1.3111301 distance 0.00024108975
+Clp0101I dirOut -1, dirIn 1, theta 0.00052899221, out 0, dj -1.0008237, alpha -62.004526
+Clp0102I 7 0.0001512554 In: C4 Out: R4 dj -1.0008237 distance 0.00052899221
+Clp0101I dirOut -1, dirIn 1, theta 0.0005285049, out 0, dj -0.35360273, alpha -61.712442
+Clp0102I 8 0.00033813617 In: C3 Out: R3 dj -0.35360273 distance 0.0005285049
+Clp0101I dirOut -1, dirIn 1, theta 0.0040127837, out 0, dj -0.13343272, alpha -62.382406
+Clp0102I 9 0.00087357282 In: C8 Out: R8 dj -0.13343272 distance 0.0040127837
+Clp0060I Primal error 3.469447e-18, dual error 8.8817842e-16
+Clp0006I 9  Obj 0.00087357282
+Clp0017I Looking optimal with tolerance of 1e-07
+Clp0060I Primal error 3.469447e-18, dual error 8.8817842e-16
+Clp0000I Optimal - objective value 0.00087357282
+Clp0022I Absolute values of scaled rhs range from 8.5726639e-05 to 0.028136724, minimum gap 1e+100
+Clp0020I Absolute values of scaled objective range from 0.14305124 to 4.9164273
+Clp0021I Absolute values of scaled bounds range from 0.00010169985 to 7.6895526e+10, minimum gap 2.2373971e+09
+Clp0022I Absolute values of scaled rhs range from 8.5726639e-05 to 0.028136724, minimum gap 1e+100
+Clp0020I Absolute values of scaled objective range from 0.14305124 to 4.9164273
+Clp0021I Absolute values of scaled bounds range from 0.00010169985 to 7.6895526e+10, minimum gap 2.2373971e+09
+Coin0513I 0 rows dropped after presolve pass 1
+Coin0506I Presolve 9 (0) rows, 9 (0) columns and 81 (0) elements
+Coin0511I After Postsolve, objective 0, infeasibilities - dual 8.9999991 (9), primal 3.0560016 (4)
+Coin0512I Presolved model was optimal, full model needs cleaning up
+Clp1001I Initial range of elements is 11.8255 to 103165.34
+Clp1002I Range of elements is 0.021680322 to 46.124776
+Clp1002I Range of elements is 0.031146702 to 32.106128
+Clp1003I Final range of elements is 0.031146702 to 32.106128
+Clp0022I Absolute values of scaled rhs range from 0.00024782161 to 0.0018936239, minimum gap 1e+100
+Clp0020I Absolute values of scaled objective range from 0.52929939 to 3.0260461
+Clp0021I Absolute values of scaled bounds range from 0.00013299233 to 2.0782189e+10, minimum gap 3.6351066e+09
+Clp0060I Primal error 0, dual error 0
+Clp0060I Primal error 0, dual error 0
+Clp0006I 0  Obj -0.0053735718 Dual inf 13.704628 (9)
+Clp0060I Primal error 0, dual error 0
+Clp0060I Primal error 0, dual error 0
+Clp0006I 0  Obj -0.0053735718 Dual inf 13.704628 (9)
+Clp0101I dirOut -1, dirIn 1, theta 0.00020822432, out 0, dj -3.0260461, alpha -32.106128
+Clp0102I 1 -0.0047434754 In: C7 Out: R7 dj -3.0260461 distance 0.00020822432
+Clp0101I dirOut -1, dirIn 1, theta 0.00016371606, out 0, dj -2.6082501, alpha -31.934353
+Clp0102I 2 -0.004316463 In: C6 Out: R6 dj -2.6082501 distance 0.00016371606
+Clp0101I dirOut -1, dirIn 1, theta 0.0005032977, out 0, dj -1.5145654, alpha -32.103208
+Clp0102I 3 -0.0035541858 In: C5 Out: R5 dj -1.5145654 distance 0.0005032977
+Clp0101I dirOut -1, dirIn 1, theta 0.00081049722, out 0, dj -1.3357423, alpha -31.967777
+Clp0102I 4 -0.0024715703 In: C0 Out: R0 dj -1.3357423 distance 0.00081049722
+Clp0101I dirOut -1, dirIn 1, theta 0.00041666535, out 0, dj -1.2426159, alpha -31.930467
+Clp0102I 5 -0.0019538153 In: C4 Out: R4 dj -1.2426159 distance 0.00041666535
+Clp0101I dirOut -1, dirIn 1, theta 0.00063893262, out 0, dj -1.0814072, alpha -31.403388
+Clp0102I 6 -0.0012628689 In: C2 Out: R2 dj -1.0814072 distance 0.00063893262
+Clp0101I dirOut -1, dirIn 1, theta 0.00078517357, out 0, dj -0.85331081, alpha -31.847224
+Clp0102I 7 -0.00059287184 In: C1 Out: R1 dj -0.85331081 distance 0.00078517357
+Clp0101I dirOut -1, dirIn 1, theta 0.0010895263, out 0, dj -0.49802699, alpha -32.045992
+Clp0102I 8 -5.0258327e-05 In: C8 Out: R8 dj -0.49802699 distance 0.0010895263
+Clp0101I dirOut -1, dirIn 1, theta 0.00042815144, out 0, dj -0.37833244, alpha -31.684784
+Clp0102I 9 0.00011172525 In: C3 Out: R3 dj -0.37833244 distance 0.00042815144
+Clp0060I Primal error 6.505213e-19, dual error 1.3322676e-15
+Clp0006I 9  Obj 0.00011172525
+Clp0017I Looking optimal with tolerance of 1e-07
+Clp0060I Primal error 6.505213e-19, dual error 1.3322676e-15
+Clp0000I Optimal - objective value 0.00011172525
+Clp0022I Absolute values of scaled rhs range from 0.00024782161 to 0.0018936239, minimum gap 1e+100
+Clp0020I Absolute values of scaled objective range from 0.52929939 to 3.0260461
+Clp0021I Absolute values of scaled bounds range from 0.00013299233 to 2.0782189e+10, minimum gap 3.6351066e+09
+Clp0022I Absolute values of scaled rhs range from 0.00024782161 to 0.0018936239, minimum gap 1e+100
+Clp0020I Absolute values of scaled objective range from 0.52929939 to 3.0260461
+Clp0021I Absolute values of scaled bounds range from 0.00013299233 to 2.0782189e+10, minimum gap 3.6351066e+09
+Coin0513I 0 rows dropped after presolve pass 1
+Coin0506I Presolve 9 (0) rows, 9 (0) columns and 81 (0) elements
+Coin0511I After Postsolve, objective 0, infeasibilities - dual 8.9999991 (9), primal 1.0362833 (7)
+Coin0512I Presolved model was optimal, full model needs cleaning up
+Clp1001I Initial range of elements is 18.406 to 104178.38
+Clp1002I Range of elements is 0.015300976 to 65.355306
+Clp1002I Range of elements is 0.033540356 to 29.814829
+Clp1003I Final range of elements is 0.03834575 to 26.07851
+Clp0022I Absolute values of scaled rhs range from 2.7021002e-05 to 0.00041671497, minimum gap 1e+100
+Clp0020I Absolute values of scaled objective range from 0.23765169 to 1.8810405
+Clp0021I Absolute values of scaled bounds range from 0.00018298925 to 4.6286226e+10, minimum gap 5.8478273e+09
+Clp0060I Primal error 0, dual error 0
+Clp0060I Primal error 0, dual error 0
+Clp0006I 0  Obj -0.0054852971 Dual inf 9.9766217 (9)
+Clp0060I Primal error 0, dual error 0
+Clp0060I Primal error 0, dual error 0
+Clp0006I 0  Obj -0.0054852971 Dual inf 9.9766217 (9)
+Clp0101I dirOut -1, dirIn 1, theta 0.00032937214, out 0, dj -1.8810405, alpha -26.07851
+Clp0102I 1 -0.0048657347 In: C6 Out: R6 dj -1.8810405 distance 0.00032937214
+Clp0101I dirOut -1, dirIn 1, theta 0.0004469077, out 0, dj -1.4893104, alpha -26.078941
+Clp0102I 2 -0.0042001505 In: C4 Out: R4 dj -1.4893104 distance 0.0004469077
+Clp0101I dirOut -1, dirIn 1, theta 0.00055269746, out 0, dj -1.438944, alpha -26.074388
+Clp0102I 3 -0.0034048498 In: C8 Out: R8 dj -1.438944 distance 0.00055269746
+Clp0101I dirOut -1, dirIn 1, theta 0.00076331196, out 0, dj -1.2698186, alpha -26.010954
+Clp0102I 4 -0.0024355821 In: C2 Out: R2 dj -1.2698186 distance 0.00076331196
+Clp0101I dirOut -1, dirIn 1, theta 0.00071212696, out 0, dj -0.9884556, alpha -25.857942
+Clp0102I 5 -0.0017316762 In: C1 Out: R1 dj -0.9884556 distance 0.00071212696
+Clp0101I dirOut -1, dirIn 1, theta 0.00060956872, out 0, dj -0.697024, alpha -25.714866
+Clp0102I 6 -0.0013067922 In: C7 Out: R7 dj -0.697024 distance 0.00060956872
+Clp0101I dirOut -1, dirIn 1, theta 0.0011548127, out 0, dj -0.45390634, alpha -25.129161
+Clp0102I 7 -0.00078261537 In: C0 Out: R0 dj -0.45390634 distance 0.0011548127
+Clp0101I dirOut -1, dirIn 1, theta 0.0016745946, out 0, dj -0.37677796, alpha -25.897208
+Clp0102I 8 -0.00015166502 In: C5 Out: R5 dj -0.37677796 distance 0.0016745946
+Clp0101I dirOut -1, dirIn 1, theta 0.0012258448, out 0, dj -0.111438, alpha -25.673688
+Clp0102I 9 -1.5059339e-05 In: C3 Out: R3 dj -0.111438 distance 0.0012258448
+Clp0060I Primal error 1.7618285e-19, dual error 1.3322676e-15
+Clp0006I 9  Obj -1.5059339e-05
+Clp0017I Looking optimal with tolerance of 1e-07
+Clp0060I Primal error 1.7618285e-19, dual error 1.3322676e-15
+Clp0000I Optimal - objective value -1.5059339e-05
+Clp0022I Absolute values of scaled rhs range from 2.7021002e-05 to 0.00041671497, minimum gap 1e+100
+Clp0020I Absolute values of scaled objective range from 0.23765169 to 1.8810405
+Clp0021I Absolute values of scaled bounds range from 0.00018298925 to 4.6286226e+10, minimum gap 5.8478273e+09
+Clp0022I Absolute values of scaled rhs range from 2.7021002e-05 to 0.00041671497, minimum gap 1e+100
+Clp0020I Absolute values of scaled objective range from 0.23765169 to 1.8810405
+Clp0021I Absolute values of scaled bounds range from 0.00018298925 to 4.6286226e+10, minimum gap 5.8478273e+09

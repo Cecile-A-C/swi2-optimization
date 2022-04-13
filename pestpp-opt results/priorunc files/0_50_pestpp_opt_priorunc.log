@@ -1,0 +1,5 @@
+time,elapsed_seconds,message
+2021-10-23 14:40:08,2.4659e-05,PEST++ performance logger started
+2021-10-23 14:40:08,0.000248822,starting to process control file
+2021-10-23 14:40:08,0.00805684,finished processing control file
+2021-10-23 14:40:08,0.00483868,initializing constraints

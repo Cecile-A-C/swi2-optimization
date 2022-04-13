@@ -1,0 +1,1396 @@
+             pestpp-opt version 
+
+       by the pestpp development team
+
+
+
+version: 5.1.2
+binary compiled on Oct 12 2021 at 01:55:50
+
+using control file: "0_20_pestpp_opt_priorunc.pst"
+in directory: "/srv/common/idm/pest/queen"
+on host: "hydrolix"
+started at 10/23/21 02:47:11
+
+Note: 3 unused lines in pest control file:
+  -->  line number 6: '2.000000E+01  -3.000000E+00   3.000000E-01   1.000000E-02        -7       999          lamforgive        noderforgive' 
+  -->  line number 10: '0         0         0         0             jcosave          verboserec          jcosaveitn          reisaveitn          parsaveitn        noparsaverun' 
+  -->  line number 12: '1' 
+
+    This software has been approved for release by the
+    U.S.Geological Survey(USGS).Although the software has 
+    been subjected to rigorous review, the USGS reserves the
+    right to update the software as needed pursuant to further
+    analysisand review.No warranty, expressed or implied, is 
+    made by the USGS or the U.S.Government as to the
+    functionality of the softwareand related material nor shall
+    the fact of release constitute any such warranty.
+    Furthermore, the software is released on condition that
+    neither the USGS nor the U.S.Government shall be held
+    liable for any damages resulting from its authorized 
+    or unauthorized use.
+
+
+Case dimensions:- 
+    Number of parameters = 181
+    Number of adjustable parameters = 69
+    Number of observations = 180
+    Number of prior estimates = 0
+
+PEST Control Information
+    relparmax = 10
+    facparmax = 10
+    facorig = 0.001
+    phiredswh = 0.1
+    noptmax = 5
+    phiredstp = 0.01
+    nphistp = 3
+    nphinored = 3
+    relparstp = 0.01
+    nrelpar = 3
+
+
+    PEST++ OPTIONS: 
+
+...general options (used in multiple tools): 
+svd_pack: redsvd
+lambda_scale_fac: 0.75,1,1.1,
+forgive_unknown_args: 0
+max_run_fail: 3
+yamr_poll_interval: 1
+parameter_covariance: prior_cov_matrix.jcb
+observation_covariance: 
+hotstart_resfile: 
+overdue_resched_fac: 1.15
+overdue_giveup_fac: 100
+overdue_giveup_minutes: 1e+30
+condor_submit_file: 
+tie_by_group: 0
+par_sigma_range: 4
+enforce_tied_bounds: 0
+debug_parse_only: 0
+check_tplins: 1
+fill_tpl_zeros: 0
+additional_ins_delimiters: 
+random_seed: 358183147
+num_tpl_ins_threads: 1
+save_binary: 0
+ensemble_output_precision: 6
+panther_echo: 1
+panther_agent_restart_on_error: 0
+panther_agent_no_ping_timeout_secs: -1
+panther_debug_loop: 0
+debug_check_par_en_consistency: 0
+panther_agent_freeze_on_fail: 0
+panther_transfer_on_finish: 
+panther_transfer_on_fail: 
+
+...pestpp-glm specific options:
+max_n_super: 1000000
+super_eigthresh: 1e-06
+n_iter_base: 1000000
+n_iter_super: 0
+super_relparmax: 0.1
+max_super_frz_iter: 20
+max_reg_iter: 20
+lambdas: 0.1,1,10,100,1000,
+iteration_summary: 0
+der_forgive: 1
+uncertainty: 1
+forecasts: 
+base_jacobian: 
+glm_num_reals: 0
+jac_scale: 1
+glm_normal_form: DIAG
+glm_debug_der_fail: 0
+glm_debug_lamb_fail: 0
+glm_debug_real_fail: 0
+glm_accept_mc_phi: 0
+glm_rebase_super: 0
+glm_iter_mc: 0
+
+...pestpp-swp options:
+sweep_parameter_csv_file: 
+sweep_output_csv_file: sweep_out.csv
+sweep_chunk: 500
+sweep_forgive: 0
+sweep_base_run: 0
+
+...pestpp-opt options:
+opt_objective_function: 
+opt_coin_log: 1
+opt_skip_final: 0
+opt_std_weights: 0
+opt_stack_size: 0
+opt_par_stack: 
+opt_obs_stack: 
+opt_decision_variable_groups: QMUNI,
+opt_external_variable_groups: 
+opt_constraint_groups: L_ZMUNI_PCT,
+opt_risk: 0.2
+opt_iter_derinc_fac: 1
+opt_direction: -1
+opt_iter_tol: 0.001
+opt_recalc_fosm_every: 1
+opt_chance_points: SINGLE
+
+...pestpp-sqp options:
+sqp_dv_en: 
+sqp_obs_restart_en: 
+sqp_num_reals: -1
+sqp_update_hessian: 0
+sqp_scale_facs:
+  1e-05
+  0.0001
+  0.01
+  0.1
+  1
+
+...pestpp-mou options:
+mou_generator: DE
+mou_population_size: 100
+mou_dv_population_file: 
+mou_obs_population_restart_file: 
+mou_objectives: 
+mou_max_archive_size: 500
+mou_risk_objective: 0
+mou_verbose_level: 1
+mou_env_selector: NSGA
+mou_mating_selector: TOURNAMENT
+mou_crossover_prob: 0.75
+mou_mutation_prob: -999
+mou_de_f: 0.8
+mou_save_population_every: -1
+mou_pso_omega: 0.7
+mou_pso_social_const: 2
+mou_pso_cognitive: 2
+mou_population_schedule: 
+mou_simplex_reflections:10
+mou_simplex_factors: 
+ 0.5
+ 0.6
+ 0.7
+ 0.8
+mou_simplex_mutation: 0
+
+...shared pestpp-ies/pestpp-da options:
+(note: 'da' args override 'ies' args when using pestpp-da)
+ies_parameter_ensemble: 
+ies_observation_ensemble: 
+ies_weights_ensemble: 
+ies_restart_parameter_ensemble: 
+ies_restart_observation_ensemble: 
+ies_use_approximate_solution: 1
+ies_lambda_mults: 0.1,1,10,
+ies_initial_lambda: 0
+ies_use_approx: 1
+ies_subset_size: 4
+ies_reg_factor: 0
+ies_verbose_level: 0
+ies_use_prior_scaling: 0
+ies_num_reals: 50
+ies_bad_phi: 1e+300
+ies_bad_phi_sigma: 1e+300
+ies_include_base: 1
+ies_use_empirical_prior: 0
+ies_group_draws: 1
+ies_enforce_bounds: 1
+ies_localizer: 
+ies_accept_phi_fac: 1.05
+ies_lambda_inc_fac: 10
+ies_lambda_dec_fac: 0.75
+ies_save_lambda_ensembles: 0
+ies_subset_how: RANDOM
+ies_localize_how: PARAMETERS
+ies_num_threads: -1
+ies_debug_fail_subset: 0
+ies_debug_fail_remainder: 0
+ies_debug_bad_phi: 0
+ies_debug_upgrade_only: 0
+ies_debug_high_subset_phi: 0
+ies_debug_high_upgrade_phi: 0
+ies_csv_by_reals: 1
+ies_autoadaloc: 0
+ies_autoadaloc_sigma_dist: 1
+ies_enforce_chglim: 0
+ies_center_on: 
+ies_no_noise: 0
+ies_drop_conflicts: 0
+ies_save_rescov:0
+ies_pdc_sigma_distance: -1
+ies_use_mda: 0
+ies_mda_init_fac: 10
+ies_mda_dec_fac: 0.5
+ies_localization_type: LOCAL
+ies_upgrades_in_memory: 1
+ies_ordered_binary: 1
+ies_multimodal_alpha: 1
+
+pestpp-sen options: 
+gsa_method: MORRIS
+gsa_morris_pooled_obs: 0
+gsa_morris_obs_sen: 1
+gsa_morris_p: 4
+gsa_morris_r: 4
+gsa_morris_delta: 0.6666
+gsa_sobol_samples: 4
+gsa_sobol_par_dist: norm
+pestpp-da options (those not shared with pestpp-ies):
+da_parameter_cycle_table: 
+da_observation_cycle_table: 
+da_hotstart_cycle: 0
+da_stop_cycle: 1000000000
+da_use_simulated_states: 1
+
+
+
+Model command line(s):- 
+    python3 model_run_opt_v1.py
+
+Model interface files:-
+    template files:
+      pest_files/hk1pp.dat.tpl
+      pest_files/param.tpl
+      pest_files/qmuni.tpl
+    model input files:
+      model_params/hk1pp.dat
+      model_params/param.dat
+      model_params/qmuni.dat
+
+    instruction files:
+      pest_files/hwells.ins
+      pest_files/zert.ins
+      pest_files/zmuni.ins
+      pest_files/zmuni_pct.ins
+      pest_files/ztdem.ins
+      pest_files/zwells.ins
+    model output files:
+      model_outputs/hwells.dat
+      model_outputs/zert.dat
+      model_outputs/zmuni.dat
+      model_outputs/zmuni_pct.dat
+      model_outputs/ztdem.dat
+      model_outputs/zwells.dat
+
+
+Parameter group information
+NAME          INCREMENT TYPE     DERIVATIVE INCREMENT    INCREMENT LOWER BOUND  FORCE CENTRAL     INCREMENT MULTIPLIER
+qmuni               ABSOLUTE                    1e-05                        0         SWITCH                        2
+hk_pp               RELATIVE                     0.01                        0         SWITCH                        2
+pargp               RELATIVE                     0.01                        0       ALWAYS_3                        2
+
+
+
+Parameter information
+NAME         TRANSFORMATION        CHANGE LIMIT  INITIAL VALUE    LOWER BOUND    UPPER BOUND        GROUP          SCALE         OFFSET  DERIVATIVE COMMAND
+alpha_l      none                    FACTOR              3              1              5        pargp              1              0                   1
+alpha_t      log                     FACTOR     0.00568027          0.001             10        pargp              1              0                   1
+hk1000       log                     FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1001       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1002       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1003       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1004       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1005       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1006       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1007       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1008       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1009       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1010       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1011       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1012       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1013       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1014       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1015       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1016       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1017       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1018       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1019       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1020       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1021       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1022       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1023       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1024       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1025       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1026       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1027       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1028       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1029       log                     FACTOR    0.000174315          3e-06         0.0006        hk_pp              1              0                   1
+hk1030       log                     FACTOR    0.000167355          3e-06         0.0006        hk_pp              1              0                   1
+hk1031       log                     FACTOR    0.000196554          3e-06         0.0006        hk_pp              1              0                   1
+hk1032       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1033       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1034       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1035       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1036       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1037       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1038       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1039       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1040       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1041       log                     FACTOR    0.000240918          3e-06         0.0006        hk_pp              1              0                   1
+hk1042       log                     FACTOR    0.000206224          3e-06         0.0006        hk_pp              1              0                   1
+hk1043       log                     FACTOR    0.000191366          3e-06         0.0006        hk_pp              1              0                   1
+hk1044       log                     FACTOR    0.000175386          3e-06         0.0006        hk_pp              1              0                   1
+hk1045       log                     FACTOR    0.000178549          3e-06         0.0006        hk_pp              1              0                   1
+hk1046       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1047       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1048       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1049       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1050       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1051       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1052       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1053       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1054       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1055       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1056       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1057       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1058       log                     FACTOR    0.000162255          3e-06         0.0006        hk_pp              1              0                   1
+hk1059       log                     FACTOR     0.00017195          3e-06         0.0006        hk_pp              1              0                   1
+hk1060       log                     FACTOR    0.000185234          3e-06         0.0006        hk_pp              1              0                   1
+hk1061       log                     FACTOR    0.000174294          3e-06         0.0006        hk_pp              1              0                   1
+hk1062       log                     FACTOR    0.000184675          3e-06         0.0006        hk_pp              1              0                   1
+hk1063       log                     FACTOR    0.000186807          3e-06         0.0006        hk_pp              1              0                   1
+hk1064       log                     FACTOR    0.000163413          3e-06         0.0006        hk_pp              1              0                   1
+hk1065       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1066       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1067       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1068       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1069       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1070       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1071       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1072       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1073       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1074       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1075       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1076       log                     FACTOR    0.000244702          3e-06         0.0006        hk_pp              1              0                   1
+hk1077       log                     FACTOR    0.000348362          3e-06         0.0006        hk_pp              1              0                   1
+hk1078       log                     FACTOR    0.000166084          3e-06         0.0006        hk_pp              1              0                   1
+hk1079       log                     FACTOR    0.000165133          3e-06         0.0006        hk_pp              1              0                   1
+hk1080       log                     FACTOR    0.000206234          3e-06         0.0006        hk_pp              1              0                   1
+hk1081       log                     FACTOR    0.000186852          3e-06         0.0006        hk_pp              1              0                   1
+hk1082       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1083       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1084       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1085       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1086       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1087       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1088       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1089       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1090       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1091       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1092       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1093       log                     FACTOR    0.000191249          3e-06         0.0006        hk_pp              1              0                   1
+hk1094       log                     FACTOR    0.000118022          3e-06         0.0006        hk_pp              1              0                   1
+hk1095       log                     FACTOR    0.000172495          3e-06         0.0006        hk_pp              1              0                   1
+hk1096       log                     FACTOR    0.000237087          3e-06         0.0006        hk_pp              1              0                   1
+hk1097       log                     FACTOR    0.000149433          3e-06         0.0006        hk_pp              1              0                   1
+hk1098       log                     FACTOR    0.000132955          3e-06         0.0006        hk_pp              1              0                   1
+hk1099       log                     FACTOR    0.000139402          3e-06         0.0006        hk_pp              1              0                   1
+hk1100       log                     FACTOR    0.000164459          3e-06         0.0006        hk_pp              1              0                   1
+hk1101       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1102       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1103       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1104       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1105       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1106       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1107       log                     FACTOR    0.000310296          3e-06         0.0006        hk_pp              1              0                   1
+hk1108       log                     FACTOR    0.000306409          3e-06         0.0006        hk_pp              1              0                   1
+hk1109       log                     FACTOR    0.000123023          3e-06         0.0006        hk_pp              1              0                   1
+hk1110       log                     FACTOR    0.000110978          3e-06         0.0006        hk_pp              1              0                   1
+hk1111       log                     FACTOR       6.96e-05          3e-06         0.0006        hk_pp              1              0                   1
+hk1112       log                     FACTOR       6.03e-05          3e-06         0.0006        hk_pp              1              0                   1
+hk1113       log                     FACTOR    0.000122478          3e-06         0.0006        hk_pp              1              0                   1
+hk1114       log                     FACTOR    0.000122964          3e-06         0.0006        hk_pp              1              0                   1
+hk1115       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1116       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1117       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1118       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1119       log                     FACTOR    0.000203909          3e-06         0.0006        hk_pp              1              0                   1
+hk1120       log                     FACTOR    0.000132577          3e-06         0.0006        hk_pp              1              0                   1
+hk1121       log                     FACTOR    0.000101505          3e-06         0.0006        hk_pp              1              0                   1
+hk1122       log                     FACTOR    0.000142796          3e-06         0.0006        hk_pp              1              0                   1
+hk1123       log                     FACTOR       2.79e-05          3e-06         0.0006        hk_pp              1              0                   1
+hk1124       log                     FACTOR       3.36e-05          3e-06         0.0006        hk_pp              1              0                   1
+hk1125       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1126       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1127       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1128       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1129       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1130       log                     FACTOR    0.000116719          3e-06         0.0006        hk_pp              1              0                   1
+hk1131       log                     FACTOR    0.000191424          3e-06         0.0006        hk_pp              1              0                   1
+hk1132       log                     FACTOR     0.00026046          3e-06         0.0006        hk_pp              1              0                   1
+hk1133       log                     FACTOR       9.99e-05          3e-06         0.0006        hk_pp              1              0                   1
+hk1134       log                     FACTOR       6.28e-05          3e-06         0.0006        hk_pp              1              0                   1
+hk1135       log                     FACTOR       3.93e-05          3e-06         0.0006        hk_pp              1              0                   1
+hk1136       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1137       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1138       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1139       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1140       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1141       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1142       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1143       log                     FACTOR    0.000112599          3e-06         0.0006        hk_pp              1              0                   1
+hk1144       log                     FACTOR       8.81e-05          3e-06         0.0006        hk_pp              1              0                   1
+hk1145       log                     FACTOR       7.92e-05          3e-06         0.0006        hk_pp              1              0                   1
+hk1146       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1147       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1148       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1149       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1150       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1151       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1152       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1153       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1154       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1155       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1156       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1157       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1158       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1159       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk1160       tied                    FACTOR    0.000256047          3e-06         0.0006        hk_pp              1              0                   1
+hk_dunes     log                     FACTOR         0.0005          5e-05            0.5        pargp              1              0                   1
+hk_seabed    log                     FACTOR       9.41e-06          2e-07          0.002        pargp              1              0                   1
+hk_valley    log                     FACTOR         0.0001          1e-07          0.001        pargp              1              0                   1
+m            none                    FACTOR              8              5             11        pargp              1              0                   1
+ne           fixed                   FACTOR            0.3            0.2            0.4        pargp              1              0                   1
+qmuni1       none                    FACTOR         0.0005        1.1e-10        1.1e+10        qmuni              1              0                   1
+qmuni2       none                    FACTOR         0.0005        1.1e-10        1.1e+10        qmuni              1              0                   1
+qmuni3       none                    FACTOR         0.0005        1.1e-10        1.1e+10        qmuni              1              0                   1
+qmuni4       none                    FACTOR         0.0005        1.1e-10        1.1e+10        qmuni              1              0                   1
+qmuni5       none                    FACTOR         0.0005        1.1e-10        1.1e+10        qmuni              1              0                   1
+qmuni6       none                    FACTOR         0.0005        1.1e-10        1.1e+10        qmuni              1              0                   1
+qmuni7       none                    FACTOR         0.0005        1.1e-10        1.1e+10        qmuni              1              0                   1
+qmuni8       none                    FACTOR         0.0005        1.1e-10        1.1e+10        qmuni              1              0                   1
+qmuni9       none                    FACTOR         0.0005        1.1e-10        1.1e+10        qmuni              1              0                   1
+rech_mmyr    none                    FACTOR        547.079            180            550        pargp              1              0                   1
+slvl         fixed                   FACTOR          0.014        1.1e-10        1.1e+10        pargp              1              0                   1
+ss           fixed                   FACTOR          1e-05        3.3e-06         0.0001        pargp              1              0                   1
+sy           fixed                   FACTOR           0.15           0.06            0.3        pargp              1              0                   1
+
+
+
+Observation information
+NAME                                VALUE                GROUP              WEIGHT
+hmuni1                               1.28                hmuni                   0
+hmuni2                                1.3                hmuni                   0
+hmuni3                               1.63                hmuni                   0
+hmuni4                               2.52                hmuni                   0
+hmuni5                               1.22                hmuni                   0
+hmuni6                               1.33                hmuni                   0
+hmuni7                               1.35                hmuni                   0
+hmuni8                               1.21                hmuni                   0
+hmuni9                               1.46                hmuni                   0
+hpz01                                2.14                hdeep                   0
+hpz02                                1.97                hdeep                   0
+hpz03                                1.59                hdeep                   0
+hpz04                                1.58                hdeep                   0
+hpz05                                1.73                hdeep                   0
+hpz06                                1.08             hshallow                   0
+hpz07                                1.44                hdeep                   0
+hpz08                                1.43                hdeep                   0
+hpz09                                1.47             hshallow                   0
+hpz10                                1.43             hshallow                   0
+hpz11                                1.45             hshallow                   0
+zert01                              -13.7                 zert                   0
+zert02                              -13.3                 zert                   0
+zert03                              -29.9                 zert                   0
+zert04                              -42.5                 zert                   0
+zert05                              -50.4                 zert                   0
+zert06                              -54.4                 zert                   0
+zert07                              -53.6                 zert                   0
+zert08                              -76.6                 zert                   0
+zert09                                -72                 zert                   0
+zert10                              -74.9                 zert                   0
+zert11                              -17.2                 zert                   0
+zert12                              -18.7                 zert                   0
+zert13                              -41.1                 zert                   0
+zert14                              -43.2                 zert                   0
+zert15                              -44.4                 zert                   0
+zert16                              -46.5                 zert                   0
+zert17                              -48.1                 zert                   0
+zert18                              -70.4                 zert                   0
+zert19                              -74.8                 zert                   0
+zert20                              -61.3                 zert                   0
+zert21                              -76.2                 zert                   0
+zert22                              -78.3                 zert                   0
+zert23                              -65.7                 zert                   0
+zert24                              -25.3                 zert                   0
+zert25                              -28.2                 zert                   0
+zert26                              -33.3                 zert                   0
+zert27                              -34.7                 zert                   0
+zert28                              -38.5                 zert                   0
+zert29                              -53.7                 zert                   0
+zert30                              -53.6                 zert                   0
+zert31                              -49.9                 zert                   0
+zert32                              -46.9                 zert                   0
+zert33                              -47.3                 zert                   0
+zert34                              -48.4                 zert                   0
+zert35                                -47                 zert                   0
+zert36                              -40.5                 zert                   0
+zert37                              -32.3                 zert                   0
+zert38                              -25.8                 zert                   0
+zert39                                -37                 zert                   0
+zert40                              -37.8                 zert                   0
+zert41                                -38                 zert                   0
+zert42                              -38.2                 zert                   0
+zert43                              -39.7                 zert                   0
+zert44                              -42.7                 zert                   0
+zert45                              -46.5                 zert                   0
+zert46                              -49.5                 zert                   0
+zert47                                -51                 zert                   0
+zert48                              -51.2                 zert                   0
+zert49                              -51.2                 zert                   0
+zert50                              -51.7                 zert                   0
+zert51                              -53.2                 zert                   0
+zert52                              -54.3                 zert                   0
+zert53                              -52.8                 zert                   0
+zert54                              -23.9                 zert                   0
+zert55                              -30.8                 zert                   0
+zert56                              -30.9                 zert                   0
+zert57                              -35.1                 zert                   0
+zert58                              -37.2                 zert                   0
+zert59                              -42.5                 zert                   0
+zert60                              -65.7                 zert                   0
+zert61                              -69.5                 zert                   0
+zert62                              -70.7                 zert                   0
+zert63                              -76.6                 zert                   0
+zert64                              -77.3                 zert                   0
+zert65                              -70.4                 zert                   0
+zert66                              -10.6                 zert                   0
+zert67                                -23                 zert                   0
+zert68                              -20.3                 zert                   0
+zert69                              -32.1                 zert                   0
+zert70                              -39.5                 zert                   0
+zert71                              -40.4                 zert                   0
+zert72                              -40.6                 zert                   0
+zert73                              -40.2                 zert                   0
+zert74                              -56.5                 zert                   0
+zert75                              -25.1                 zert                   0
+zert76                              -29.6                 zert                   0
+zert77                              -29.2                 zert                   0
+zert78                              -31.7                 zert                   0
+zert79                              -59.9                 zert                   0
+zert80                              -11.8                 zert                   0
+zert81                              -34.1                 zert                   0
+zert82                              -36.1                 zert                   0
+zert83                              -38.2                 zert                   0
+zert84                              -38.2                 zert                   0
+zert85                              -35.9                 zert                   0
+zert86                              -33.8                 zert                   0
+zert87                              -47.7                 zert                   0
+zmuni1                                  0                zmuni                   0
+zmuni1_pct                        -20.027          l_zmuni_pct                   1
+zmuni2                                  0                zmuni                   0
+zmuni2_pct                        -21.054          l_zmuni_pct                   1
+zmuni3                                  0                zmuni                   0
+zmuni3_pct                        -22.994          l_zmuni_pct                   1
+zmuni4                                  0                zmuni                   0
+zmuni4_pct                        -11.533          l_zmuni_pct                   1
+zmuni5                                  0                zmuni                   0
+zmuni5_pct                        -20.813          l_zmuni_pct                   1
+zmuni6                                  0                zmuni                   0
+zmuni6_pct                        -18.573          l_zmuni_pct                   1
+zmuni7                                  0                zmuni                   0
+zmuni7_pct                        -32.193          l_zmuni_pct                   1
+zmuni8                                  0                zmuni                   0
+zmuni8_pct                        -28.603          l_zmuni_pct                   1
+zmuni9                                  0                zmuni                   0
+zmuni9_pct                        -24.393          l_zmuni_pct                   1
+zpz01                              -46.62               zwells                   0
+zpz02                              -45.35               zwells                   0
+zpz03                              -41.52               zwells                   0
+zpz04                               -33.8               zwells                   0
+zpz05                              -31.41               zwells                   0
+zpz07                              -64.24               zwells                   0
+zpz08                              -42.53               zwells                   0
+ztdem01                           -25.013                ztdem                   0
+ztdem02                           -47.463                ztdem                   0
+ztdem03                           -46.883                ztdem                   0
+ztdem05                           -32.413                ztdem                   0
+ztdem08                           -29.363                ztdem                   0
+ztdem12                           -40.953                ztdem                   0
+ztdem14                           -50.543                ztdem                   0
+ztdem15                           -49.253                ztdem                   0
+ztdem17                           -49.633                ztdem                   0
+ztdem20                           -31.113                ztdem                   0
+ztdem21                           -52.463                ztdem                   0
+ztdem22                           -50.553                ztdem                   0
+ztdem32                           -42.433                ztdem                   0
+ztdem33                           -44.143                ztdem                   0
+ztdem34                           -48.973                ztdem                   0
+ztdem35                           -51.323                ztdem                   0
+ztdem37                           -69.243                ztdem                   0
+ztdem41                           -45.833                ztdem                   0
+ztdem42                           -61.053                ztdem                   0
+ztdem43                           -70.463                ztdem                   0
+ztdem44                           -33.793                ztdem                   0
+ztdem45                           -30.453                ztdem                   0
+ztdem46                           -38.133                ztdem                   0
+ztdem47                           -34.863                ztdem                   0
+ztdem48                           -43.503                ztdem                   0
+ztdem49                           -45.763                ztdem                   0
+ztdem51                           -52.313                ztdem                   0
+ztdem52                           -34.473                ztdem                   0
+ztdem53                           -41.733                ztdem                   0
+ztdem54                           -42.653                ztdem                   0
+ztdem55                           -40.103                ztdem                   0
+ztdem56                           -35.313                ztdem                   0
+ztdem57                           -36.013                ztdem                   0
+ztdem58                           -35.883                ztdem                   0
+ztdem59                           -51.883                ztdem                   0
+ztdem61                           -38.133                ztdem                   0
+ztdem62                           -34.473                ztdem                   0
+ztdem63                           -55.353                ztdem                   0
+ztdem64                           -46.833                ztdem                   0
+ztdem65                           -44.223                ztdem                   0
+ztdem66                           -52.533                ztdem                   0
+ztdem68                           -23.933                ztdem                   0
+ztdem69                           -34.673                ztdem                   0
+ztdem71                           -47.183                ztdem                   0
+ztdem74                           -43.203                ztdem                   0
+ztdem75                           -34.373                ztdem                   0
+ztdem80                           -30.233                ztdem                   0
+ztdem81                           -31.273                ztdem                   0
+
+
+
+Prior information
+
+   no prior information provided
+
+
+
+PEST SVD Information
+    maxsing = 10000000
+    eigthresh = 1e-06
+
+
+
+
+
+   -----    Starting Optimization Iterations    ----    
+
+...augmenting prior information constraints with decision variable bounds
+  using FOSM-based chance constraints/objectives with risk = 0.2
+ warning: no ++opt_objective_function-->forming a generic objective function (1.0 coef for each decision var)
+
+  -------------------------------------------------------------
+  ---  sequential linear programming problem information  ---  
+  -------------------------------------------------------------
+
+-->number of iterations of sequential linear programming (noptmax): 5
+-->objective function sense (direction): maximize
+-->number of decision variable: 9
+-->number of observation constraints: 9
+-->number of prior information constraints: 0
+
+
+  ---  decision variables active in SLP  ---  
+  ---  objective function coefficients  ---  
+name                obj func coefficient     
+QMUNI1              1                        
+QMUNI2              1                        
+QMUNI3              1                        
+QMUNI4              1                        
+QMUNI5              1                        
+QMUNI6              1                        
+QMUNI7              1                        
+QMUNI8              1                        
+QMUNI9              1                        
+
+  ---  objective function value (using initial dec var values): 0.0045
+
+ note: bound and initial value info reported in 'parameter data' section
+
+
+  ---  observation constraints and/or objectives ---  
+name                 sense          value          
+ZMUNI1_PCT           less_than      -20.027        
+ZMUNI2_PCT           less_than      -21.054        
+ZMUNI3_PCT           less_than      -22.994        
+ZMUNI4_PCT           less_than      -11.533        
+ZMUNI5_PCT           less_than      -20.813        
+ZMUNI6_PCT           less_than      -18.573        
+ZMUNI7_PCT           less_than      -32.193        
+ZMUNI8_PCT           less_than      -28.603        
+ZMUNI9_PCT           less_than      -24.393        
+
+
+  ---  chance constraint/objective FOSM information  ---  
+...using FOSM-based chance constraints/objectives
+...++opt_risk and corresponding probit function value: 0.2       -0.841756           
+...number of non-zero weight observations for FOSM calcs: 0
+...number of adjustable parameters for chance constraint/objective calcs: 60
+...repeat chance constraint/objective calculations every: 1 iterations
+
+   adjustable parameters used in FOSM calculations:
+ALPHA_L        ALPHA_T        HK1000         HK1029         HK1030         HK1031         
+HK1041         HK1042         HK1043         HK1044         HK1045         HK1058         
+HK1059         HK1060         HK1061         HK1062         HK1063         HK1064         
+HK1076         HK1077         HK1078         HK1079         HK1080         HK1081         
+HK1093         HK1094         HK1095         HK1096         HK1097         HK1098         
+HK1099         HK1100         HK1107         HK1108         HK1109         HK1110         
+HK1111         HK1112         HK1113         HK1114         HK1119         HK1120         
+HK1121         HK1122         HK1123         HK1124         HK1130         HK1131         
+HK1132         HK1133         HK1134         HK1135         HK1143         HK1144         
+HK1145         HK_DUNES       HK_SEABED      HK_VALLEY      M              RECH_MMYR      
+
+
+
+...Note: No nonzero weight observations found.
+...Prior constraint/objective uncertainty will be used in FOSM-based calculations
+
+
+  ---------------------------------
+  --- starting LP iteration 1  ---  
+  ---------------------------------
+
+
+  ---  calculating response matrix for iteration 1  ---  
+
+saving iteration 1 reponse matrix to file: 0_20_pestpp_opt_priorunc.1.jcb
+  ---  calculating FOSM-based chance constraint/objective components  ---  
+  ---   done with FOSM-based chance constraint/objective calculations  ---  
+
+
+   Chance constraint/objective information at start of iteration 1
+name                         sense    required   sim value prior stdev  post stdev      offset new sim value
+ZMUNI1_PCT               less_than     -20.027    -29.2252     38.8721     38.8721    -32.7209      -61.9461
+ZMUNI2_PCT               less_than     -21.054    -23.4312     34.4279     34.4279    -28.9799      -52.4112
+ZMUNI3_PCT               less_than     -22.994    -26.8679     36.7051     36.7051    -30.8968      -57.7647
+ZMUNI4_PCT               less_than     -11.533     13.2948     38.4284     38.4284    -32.3474      -19.0526
+ZMUNI5_PCT               less_than     -20.813    -18.4048     38.7686     38.7686    -32.6337      -51.0385
+ZMUNI6_PCT               less_than     -18.573    -21.3387     39.9699     39.9699    -33.6449      -54.9836
+ZMUNI7_PCT               less_than     -32.193    -25.2841     36.6222     36.6222     -30.827      -56.1111
+ZMUNI8_PCT               less_than     -28.603    -24.5464     34.8691     34.8691    -29.3513      -53.8977
+ZMUNI9_PCT               less_than     -24.393    -21.0822     36.7604     36.7604    -30.9433      -52.0255
+  note: 'offset' is the value added to the simulated constraint/objective value to account
+        for the uncertainty in the constraint/objective value arsing from uncertainty in the 
+        adjustable parameters identified in the control file.
+         The 'required' value only applies to constraint quantities.
+
+number of nonzero elements in response matrix: 81 of 81
+
+  observation constraint/objective information at start of iteration 1
+name                         sense    required      sim value       residual    lower bound    upper bound
+ZMUNI1_PCT               less_than     -20.027       -61.9461        41.9191  -1.79769e+308        41.9191
+ZMUNI2_PCT               less_than     -21.054       -52.4112        31.3572  -1.79769e+308        31.3572
+ZMUNI3_PCT               less_than     -22.994       -57.7647        34.7707  -1.79769e+308        34.7707
+ZMUNI4_PCT               less_than     -11.533       -19.0526        7.51958  -1.79769e+308        7.51958
+ZMUNI5_PCT               less_than     -20.813       -51.0385        30.2255  -1.79769e+308        30.2255
+ZMUNI6_PCT               less_than     -18.573       -54.9836        36.4106  -1.79769e+308        36.4106
+ZMUNI7_PCT               less_than     -32.193       -56.1111        23.9181  -1.79769e+308        23.9181
+ZMUNI8_PCT               less_than     -28.603       -53.8977        25.2947  -1.79769e+308        25.2947
+ZMUNI9_PCT               less_than     -24.393       -52.0255        27.6325  -1.79769e+308        27.6325
+
+   Chance constraint/objective information at start of iteration 1
+name                         sense    required   sim value prior stdev  post stdev      offset new sim value
+ZMUNI1_PCT               less_than     -20.027    -29.2252     38.8721     38.8721    -32.7209      -61.9461
+ZMUNI2_PCT               less_than     -21.054    -23.4312     34.4279     34.4279    -28.9799      -52.4112
+ZMUNI3_PCT               less_than     -22.994    -26.8679     36.7051     36.7051    -30.8968      -57.7647
+ZMUNI4_PCT               less_than     -11.533     13.2948     38.4284     38.4284    -32.3474      -19.0526
+ZMUNI5_PCT               less_than     -20.813    -18.4048     38.7686     38.7686    -32.6337      -51.0385
+ZMUNI6_PCT               less_than     -18.573    -21.3387     39.9699     39.9699    -33.6449      -54.9836
+ZMUNI7_PCT               less_than     -32.193    -25.2841     36.6222     36.6222     -30.827      -56.1111
+ZMUNI8_PCT               less_than     -28.603    -24.5464     34.8691     34.8691    -29.3513      -53.8977
+ZMUNI9_PCT               less_than     -24.393    -21.0822     36.7604     36.7604    -30.9433      -52.0255
+  note: 'offset' is the value added to the simulated constraint/objective value to account
+        for the uncertainty in the constraint/objective value arsing from uncertainty in the 
+        adjustable parameters identified in the control file.
+         The 'required' value only applies to constraint quantities.
+
+  ---  solving linear program for iteration 1  ---  
+ iteration 1 linear solution is proven optimal
+
+
+  ---  linear program solution complete for iteration 1  ---  
+  ---  processing results for iteration 1 LP solution  ---  
+
+
+
+     decision variable information at end of SLP iteration 1
+
+name                        current            new   objfunc coef    cur contrib    new contrib   reduced cost           simplex status
+QMUNI1                       0.0005     0.00164632              1         0.0005     0.00164632             -0                    basic
+QMUNI2                       0.0005     0.00125321              1         0.0005     0.00125321             -0                    basic
+QMUNI3                       0.0005     0.00135283              1         0.0005     0.00135283             -0                    basic
+QMUNI4                       0.0005    0.000474386              1         0.0005    0.000474386             -0                    basic
+QMUNI5                       0.0005     0.00124268              1         0.0005     0.00124268             -0                    basic
+QMUNI6                       0.0005     0.00145596              1         0.0005     0.00145596             -0                    basic
+QMUNI7                       0.0005     0.00117007              1         0.0005     0.00117007             -0                    basic
+QMUNI8                       0.0005     0.00126685              1         0.0005     0.00126685             -0                    basic
+QMUNI9                       0.0005      0.0015564              1         0.0005      0.0015564             -0                    basic
+
+
+  ---  iteration 1 objective function value:       0.0114187  ---  
+
+
+
+     estimated constraint/objective information at end of iteration 1
+
+name                          sense       required    fosm offset        current       residual            new       residual
+ZMUNI1_PCT                less_than        -20.027       -32.7209       -29.2252        9.19823        -20.027   -7.10543e-15
+ZMUNI2_PCT                less_than        -21.054       -28.9799       -23.4312        2.37724        -21.054    3.55271e-15
+ZMUNI3_PCT                less_than        -22.994       -30.8968       -26.8679        3.87393        -22.994              0
+ZMUNI4_PCT                less_than        -11.533       -32.3474        13.2948       -24.8278        -11.533    5.32907e-15
+ZMUNI5_PCT                less_than        -20.813       -32.6337       -18.4048       -2.40817        -20.813    3.55271e-15
+ZMUNI6_PCT                less_than        -18.573       -33.6449       -21.3387        2.76568        -18.573    2.84217e-14
+ZMUNI7_PCT                less_than        -32.193        -30.827       -25.2841       -6.90893        -32.193              0
+ZMUNI8_PCT                less_than        -28.603       -29.3513       -24.5464       -4.05658        -28.603   -7.10543e-15
+ZMUNI9_PCT                less_than        -24.393       -30.9433       -21.0822       -3.31083        -24.393              0
+  ---  running the model once with optimal decision var values
+
+
+     simulated constraint/objective information at end of iteration 1
+
+name                          sense       required    fosm offset        current       residual            new       residual
+ZMUNI1_PCT                less_than        -20.027       -32.7209       -29.2252        9.19823       -21.0162       0.989175
+ZMUNI2_PCT                less_than        -21.054       -28.9799       -23.4312        2.37724       -20.5698      -0.484241
+ZMUNI3_PCT                less_than        -22.994       -30.8968       -26.8679        3.87393       -22.5031      -0.490928
+ZMUNI4_PCT                less_than        -11.533       -32.3474        13.2948       -24.8278       -9.43318       -2.09982
+ZMUNI5_PCT                less_than        -20.813       -32.6337       -18.4048       -2.40817       -24.3091        3.49609
+ZMUNI6_PCT                less_than        -18.573       -33.6449       -21.3387        2.76568       -22.0418        3.46882
+ZMUNI7_PCT                less_than        -32.193        -30.827       -25.2841       -6.90893       -31.6973      -0.495692
+ZMUNI8_PCT                less_than        -28.603       -29.3513       -24.5464       -4.05658       -27.5038       -1.09919
+ZMUNI9_PCT                less_than        -24.393       -30.9433       -21.0822       -3.31083       -22.8743       -1.51869
+
+  ---  convergence check iteration 1  ---  
+
+-->                     ++opt_iter_tol:          0.001
+-->scaled max decision variable change:    0.000646319
+-->      scaled  max constraint change:        40.9299
+-->   scaled objective function change:     0.00691871
+-->the following constraints are not satisfied (distance shown):
+-->   ZMUNI2_PCT       0.484241
+-->   ZMUNI3_PCT       0.490928
+-->   ZMUNI4_PCT        2.09982
+-->   ZMUNI7_PCT       0.495692
+-->   ZMUNI8_PCT        1.09919
+-->   ZMUNI9_PCT        1.51869
+
+
+  ---------------------------------
+  --- starting LP iteration 2  ---  
+  ---------------------------------
+
+
+  ---  calculating response matrix for iteration 2  ---  
+
+saving iteration 2 reponse matrix to file: 0_20_pestpp_opt_priorunc.2.jcb
+  ---  calculating FOSM-based chance constraint/objective components  ---  
+  ---   done with FOSM-based chance constraint/objective calculations  ---  
+
+
+   Chance constraint/objective information at start of iteration 2
+name                         sense    required   sim value prior stdev  post stdev      offset new sim value
+ZMUNI1_PCT               less_than     -20.027     11.7047     36.0843     36.0843    -30.3742      -18.6695
+ZMUNI2_PCT               less_than     -21.054     8.41015     30.9178     30.9178    -26.0252      -17.6151
+ZMUNI3_PCT               less_than     -22.994     8.39369     32.7669     32.7669    -27.5817       -19.188
+ZMUNI4_PCT               less_than     -11.533     22.9142     35.9949     35.9949    -30.2989       -7.3847
+ZMUNI5_PCT               less_than     -20.813     8.32459     35.2762     35.2762     -29.694      -21.3694
+ZMUNI6_PCT               less_than     -18.573     11.6031     35.8255     35.8255    -30.1564      -18.5533
+ZMUNI7_PCT               less_than     -32.193   -0.870319     33.7629     33.7629    -28.4202      -29.2905
+ZMUNI8_PCT               less_than     -28.603     1.84748     32.7175     32.7175    -27.5401      -25.6927
+ZMUNI9_PCT               less_than     -24.393       8.069      36.695      36.695    -30.8882      -22.8192
+  note: 'offset' is the value added to the simulated constraint/objective value to account
+        for the uncertainty in the constraint/objective value arsing from uncertainty in the 
+        adjustable parameters identified in the control file.
+         The 'required' value only applies to constraint quantities.
+
+number of nonzero elements in response matrix: 81 of 81
+
+  observation constraint/objective information at start of iteration 2
+name                         sense    required      sim value       residual    lower bound    upper bound
+ZMUNI1_PCT               less_than     -20.027       -18.6695       -1.35753  -1.79769e+308       -1.35753
+ZMUNI2_PCT               less_than     -21.054       -17.6151       -3.43894  -1.79769e+308       -3.43894
+ZMUNI3_PCT               less_than     -22.994        -19.188       -3.80598  -1.79769e+308       -3.80598
+ZMUNI4_PCT               less_than     -11.533        -7.3847        -4.1483  -1.79769e+308        -4.1483
+ZMUNI5_PCT               less_than     -20.813       -21.3694       0.556374  -1.79769e+308       0.556374
+ZMUNI6_PCT               less_than     -18.573       -18.5533     -0.0197253  -1.79769e+308     -0.0197253
+ZMUNI7_PCT               less_than     -32.193       -29.2905       -2.90253  -1.79769e+308       -2.90253
+ZMUNI8_PCT               less_than     -28.603       -25.6927       -2.91034  -1.79769e+308       -2.91034
+ZMUNI9_PCT               less_than     -24.393       -22.8192       -1.57379  -1.79769e+308       -1.57379
+
+   Chance constraint/objective information at start of iteration 2
+name                         sense    required   sim value prior stdev  post stdev      offset new sim value
+ZMUNI1_PCT               less_than     -20.027     11.7047     36.0843     36.0843    -30.3742      -18.6695
+ZMUNI2_PCT               less_than     -21.054     8.41015     30.9178     30.9178    -26.0252      -17.6151
+ZMUNI3_PCT               less_than     -22.994     8.39369     32.7669     32.7669    -27.5817       -19.188
+ZMUNI4_PCT               less_than     -11.533     22.9142     35.9949     35.9949    -30.2989       -7.3847
+ZMUNI5_PCT               less_than     -20.813     8.32459     35.2762     35.2762     -29.694      -21.3694
+ZMUNI6_PCT               less_than     -18.573     11.6031     35.8255     35.8255    -30.1564      -18.5533
+ZMUNI7_PCT               less_than     -32.193   -0.870319     33.7629     33.7629    -28.4202      -29.2905
+ZMUNI8_PCT               less_than     -28.603     1.84748     32.7175     32.7175    -27.5401      -25.6927
+ZMUNI9_PCT               less_than     -24.393       8.069      36.695      36.695    -30.8882      -22.8192
+  note: 'offset' is the value added to the simulated constraint/objective value to account
+        for the uncertainty in the constraint/objective value arsing from uncertainty in the 
+        adjustable parameters identified in the control file.
+         The 'required' value only applies to constraint quantities.
+
+  ---  solving linear program for iteration 2  ---  
+ iteration 2 linear solution is proven optimal
+
+
+  ---  linear program solution complete for iteration 2  ---  
+  ---  processing results for iteration 2 LP solution  ---  
+
+
+
+     decision variable information at end of SLP iteration 2
+
+name                        current            new   objfunc coef    cur contrib    new contrib   reduced cost           simplex status
+QMUNI1                   0.00164632     0.00163601              1     0.00164632     0.00163601             -0                    basic
+QMUNI2                   0.00125321     0.00116781              1     0.00125321     0.00116781             -0                    basic
+QMUNI3                   0.00135283     0.00125121              1     0.00135283     0.00125121             -0                    basic
+QMUNI4                  0.000474386    0.000442563              1    0.000474386    0.000442563             -0                    basic
+QMUNI5                   0.00124268     0.00126678              1     0.00124268     0.00126678             -0                    basic
+QMUNI6                   0.00145596     0.00146034              1     0.00145596     0.00146034             -0                    basic
+QMUNI7                   0.00117007     0.00107811              1     0.00117007     0.00107811             -0                    basic
+QMUNI8                   0.00126685     0.00117448              1     0.00126685     0.00117448             -0                    basic
+QMUNI9                    0.0015564     0.00150762              1      0.0015564     0.00150762             -0                    basic
+
+
+  ---  iteration 2 objective function value:       0.0109849  ---  
+
+
+
+     estimated constraint/objective information at end of iteration 2
+
+name                          sense       required    fosm offset        current       residual            new       residual
+ZMUNI1_PCT                less_than        -20.027       -30.3742        11.7047       -31.7317        -20.027    3.55271e-15
+ZMUNI2_PCT                less_than        -21.054       -26.0252        8.41015       -29.4642        -21.054              0
+ZMUNI3_PCT                less_than        -22.994       -27.5817        8.39369       -31.3877        -22.994    3.55271e-15
+ZMUNI4_PCT                less_than        -11.533       -30.2989        22.9142       -34.4472        -11.533    1.77636e-15
+ZMUNI5_PCT                less_than        -20.813        -29.694        8.32459       -29.1376        -20.813              0
+ZMUNI6_PCT                less_than        -18.573       -30.1564        11.6031       -30.1761        -18.573              0
+ZMUNI7_PCT                less_than        -32.193       -28.4202      -0.870319       -31.3227        -32.193    7.10543e-15
+ZMUNI8_PCT                less_than        -28.603       -27.5401        1.84748       -30.4505        -28.603    3.55271e-15
+ZMUNI9_PCT                less_than        -24.393       -30.8882          8.069        -32.462        -24.393              0
+  ---  running the model once with optimal decision var values
+
+
+     simulated constraint/objective information at end of iteration 2
+
+name                          sense       required    fosm offset        current       residual            new       residual
+ZMUNI1_PCT                less_than        -20.027       -30.3742        11.7047       -31.7317       -20.0071     -0.0198741
+ZMUNI2_PCT                less_than        -21.054       -26.0252        8.41015       -29.4642       -21.0341     -0.0198846
+ZMUNI3_PCT                less_than        -22.994       -27.5817        8.39369       -31.3877       -22.9673     -0.0266877
+ZMUNI4_PCT                less_than        -11.533       -30.2989        22.9142       -34.4472       -11.5337    0.000662955
+ZMUNI5_PCT                less_than        -20.813        -29.694        8.32459       -29.1376       -20.6926      -0.120388
+ZMUNI6_PCT                less_than        -18.573       -30.1564        11.6031       -30.1761       -18.4723       -0.10068
+ZMUNI7_PCT                less_than        -32.193       -28.4202      -0.870319       -31.3227       -32.1486     -0.0443566
+ZMUNI8_PCT                less_than        -28.603       -27.5401        1.84748       -30.4505       -28.5588     -0.0442379
+ZMUNI9_PCT                less_than        -24.393       -30.8882          8.069        -32.462       -24.3315     -0.0614576
+
+  ---  convergence check iteration 2  ---  
+
+-->                     ++opt_iter_tol:          0.001
+-->scaled max decision variable change:     0.00165663
+-->      scaled  max constraint change:        4.14896
+-->   scaled objective function change:    0.000433788
+-->the following constraints are not satisfied (distance shown):
+-->   ZMUNI3_PCT      0.0266877
+-->   ZMUNI5_PCT       0.120388
+-->   ZMUNI6_PCT        0.10068
+-->   ZMUNI7_PCT      0.0443566
+-->   ZMUNI8_PCT      0.0442379
+-->   ZMUNI9_PCT      0.0614576
+
+
+  ---------------------------------
+  --- starting LP iteration 3  ---  
+  ---------------------------------
+
+
+  ---  calculating response matrix for iteration 3  ---  
+
+saving iteration 3 reponse matrix to file: 0_20_pestpp_opt_priorunc.3.jcb
+  ---  calculating FOSM-based chance constraint/objective components  ---  
+  ---   done with FOSM-based chance constraint/objective calculations  ---  
+
+
+   Chance constraint/objective information at start of iteration 3
+name                         sense    required   sim value prior stdev  post stdev      offset new sim value
+ZMUNI1_PCT               less_than     -20.027      10.367     38.6791     38.6791    -32.5583      -22.1913
+ZMUNI2_PCT               less_than     -21.054      4.9911     31.8626     31.8626    -26.8205      -21.8294
+ZMUNI3_PCT               less_than     -22.994     4.61439      32.714      32.714    -27.5372      -22.9228
+ZMUNI4_PCT               less_than     -11.533     18.7652       39.35       39.35    -33.1231      -14.3579
+ZMUNI5_PCT               less_than     -20.813     9.00136     42.8128     42.8128     -36.038      -27.0366
+ZMUNI6_PCT               less_than     -18.573     11.6841     44.1196     44.1196     -37.138      -25.4539
+ZMUNI7_PCT               less_than     -32.193    -3.72849     40.4202     40.4202     -34.024      -37.7525
+ZMUNI8_PCT               less_than     -28.603    -1.01862      42.379      42.379    -35.6728      -36.6914
+ZMUNI9_PCT               less_than     -24.393     6.55667     51.8547     51.8547     -43.649      -37.0923
+  note: 'offset' is the value added to the simulated constraint/objective value to account
+        for the uncertainty in the constraint/objective value arsing from uncertainty in the 
+        adjustable parameters identified in the control file.
+         The 'required' value only applies to constraint quantities.
+
+number of nonzero elements in response matrix: 81 of 81
+
+  observation constraint/objective information at start of iteration 3
+name                         sense    required      sim value       residual    lower bound    upper bound
+ZMUNI1_PCT               less_than     -20.027       -22.1913        2.16431  -1.79769e+308        2.16431
+ZMUNI2_PCT               less_than     -21.054       -21.8294       0.775443  -1.79769e+308       0.775443
+ZMUNI3_PCT               less_than     -22.994       -22.9228     -0.0711784  -1.79769e+308     -0.0711784
+ZMUNI4_PCT               less_than     -11.533       -14.3579        2.82487  -1.79769e+308        2.82487
+ZMUNI5_PCT               less_than     -20.813       -27.0366         6.2236  -1.79769e+308         6.2236
+ZMUNI6_PCT               less_than     -18.573       -25.4539         6.8809  -1.79769e+308         6.8809
+ZMUNI7_PCT               less_than     -32.193       -37.7525        5.55948  -1.79769e+308        5.55948
+ZMUNI8_PCT               less_than     -28.603       -36.6914        8.08842  -1.79769e+308        8.08842
+ZMUNI9_PCT               less_than     -24.393       -37.0923        12.6993  -1.79769e+308        12.6993
+
+   Chance constraint/objective information at start of iteration 3
+name                         sense    required   sim value prior stdev  post stdev      offset new sim value
+ZMUNI1_PCT               less_than     -20.027      10.367     38.6791     38.6791    -32.5583      -22.1913
+ZMUNI2_PCT               less_than     -21.054      4.9911     31.8626     31.8626    -26.8205      -21.8294
+ZMUNI3_PCT               less_than     -22.994     4.61439      32.714      32.714    -27.5372      -22.9228
+ZMUNI4_PCT               less_than     -11.533     18.7652       39.35       39.35    -33.1231      -14.3579
+ZMUNI5_PCT               less_than     -20.813     9.00136     42.8128     42.8128     -36.038      -27.0366
+ZMUNI6_PCT               less_than     -18.573     11.6841     44.1196     44.1196     -37.138      -25.4539
+ZMUNI7_PCT               less_than     -32.193    -3.72849     40.4202     40.4202     -34.024      -37.7525
+ZMUNI8_PCT               less_than     -28.603    -1.01862      42.379      42.379    -35.6728      -36.6914
+ZMUNI9_PCT               less_than     -24.393     6.55667     51.8547     51.8547     -43.649      -37.0923
+  note: 'offset' is the value added to the simulated constraint/objective value to account
+        for the uncertainty in the constraint/objective value arsing from uncertainty in the 
+        adjustable parameters identified in the control file.
+         The 'required' value only applies to constraint quantities.
+
+  ---  solving linear program for iteration 3  ---  
+ iteration 3 linear solution is proven optimal
+
+
+  ---  linear program solution complete for iteration 3  ---  
+  ---  processing results for iteration 3 LP solution  ---  
+
+
+
+     decision variable information at end of SLP iteration 3
+
+name                        current            new   objfunc coef    cur contrib    new contrib   reduced cost           simplex status
+QMUNI1                   0.00163601     0.00169849              1     0.00163601     0.00169849             -0                    basic
+QMUNI2                   0.00116781     0.00117833              1     0.00116781     0.00117833             -0                    basic
+QMUNI3                   0.00125121     0.00121802              1     0.00125121     0.00121802             -0                    basic
+QMUNI4                  0.000442563    0.000467889              1    0.000442563    0.000467889             -0                    basic
+QMUNI5                   0.00126678     0.00149612              1     0.00126678     0.00149612             -0                    basic
+QMUNI6                   0.00146034     0.00170878              1     0.00146034     0.00170878             -0                    basic
+QMUNI7                   0.00107811     0.00132552              1     0.00107811     0.00132552             -0                    basic
+QMUNI8                   0.00117448     0.00153021              1     0.00117448     0.00153021             -0                    basic
+QMUNI9                   0.00150762     0.00212017              1     0.00150762     0.00212017             -0                    basic
+
+
+  ---  iteration 3 objective function value:       0.0127435  ---  
+
+
+
+     estimated constraint/objective information at end of iteration 3
+
+name                          sense       required    fosm offset        current       residual            new       residual
+ZMUNI1_PCT                less_than        -20.027       -32.5583         10.367        -30.394        -20.027   -3.55271e-15
+ZMUNI2_PCT                less_than        -21.054       -26.8205         4.9911       -26.0451        -21.054   -3.55271e-15
+ZMUNI3_PCT                less_than        -22.994       -27.5372        4.61439       -27.6084        -22.994              0
+ZMUNI4_PCT                less_than        -11.533       -33.1231        18.7652       -30.2982        -11.533   -1.77636e-15
+ZMUNI5_PCT                less_than        -20.813        -36.038        9.00136       -29.8144        -20.813   -3.55271e-15
+ZMUNI6_PCT                less_than        -18.573        -37.138        11.6841       -30.2571        -18.573   -3.55271e-15
+ZMUNI7_PCT                less_than        -32.193        -34.024       -3.72849       -28.4645        -32.193   -7.10543e-15
+ZMUNI8_PCT                less_than        -28.603       -35.6728       -1.01862       -27.5844        -28.603              0
+ZMUNI9_PCT                less_than        -24.393        -43.649        6.55667       -30.9497        -24.393              0
+  ---  running the model once with optimal decision var values
+
+
+     simulated constraint/objective information at end of iteration 3
+
+name                          sense       required    fosm offset        current       residual            new       residual
+ZMUNI1_PCT                less_than        -20.027       -32.5583         10.367        -30.394       -19.1284      -0.898608
+ZMUNI2_PCT                less_than        -21.054       -26.8205         4.9911       -26.0451       -20.2047      -0.849334
+ZMUNI3_PCT                less_than        -22.994       -27.5372        4.61439       -27.6084       -22.1234      -0.870596
+ZMUNI4_PCT                less_than        -11.533       -33.1231        18.7652       -30.2982       -10.8098      -0.723224
+ZMUNI5_PCT                less_than        -20.813        -36.038        9.00136       -29.8144       -19.4236       -1.38944
+ZMUNI6_PCT                less_than        -18.573        -37.138        11.6841       -30.2571       -17.0579       -1.51513
+ZMUNI7_PCT                less_than        -32.193        -34.024       -3.72849       -28.4645       -30.0361       -2.15688
+ZMUNI8_PCT                less_than        -28.603       -35.6728       -1.01862       -27.5844       -26.3937       -2.20932
+ZMUNI9_PCT                less_than        -24.393        -43.649        6.55667       -30.9497       -21.8264       -2.56657
+
+  ---  convergence check iteration 3  ---  
+
+-->                     ++opt_iter_tol:          0.001
+-->scaled max decision variable change:     0.00157352
+-->      scaled  max constraint change:        15.2659
+-->   scaled objective function change:     0.00175861
+-->the following constraints are not satisfied (distance shown):
+-->   ZMUNI1_PCT       0.898608
+-->   ZMUNI2_PCT       0.849334
+-->   ZMUNI3_PCT       0.870596
+-->   ZMUNI4_PCT       0.723224
+-->   ZMUNI5_PCT        1.38944
+-->   ZMUNI6_PCT        1.51513
+-->   ZMUNI7_PCT        2.15688
+-->   ZMUNI8_PCT        2.20932
+-->   ZMUNI9_PCT        2.56657
+
+
+  ---------------------------------
+  --- starting LP iteration 4  ---  
+  ---------------------------------
+
+
+  ---  calculating response matrix for iteration 4  ---  
+
+saving iteration 4 reponse matrix to file: 0_20_pestpp_opt_priorunc.4.jcb
+  ---  calculating FOSM-based chance constraint/objective components  ---  
+  ---   done with FOSM-based chance constraint/objective calculations  ---  
+
+
+   Chance constraint/objective information at start of iteration 4
+name                         sense    required   sim value prior stdev  post stdev      offset new sim value
+ZMUNI1_PCT               less_than     -20.027       13.43     36.8783     36.8783    -31.0425      -17.6126
+ZMUNI2_PCT               less_than     -21.054     6.61587     32.0444     32.0444    -26.9736      -20.3577
+ZMUNI3_PCT               less_than     -22.994     5.41381     33.3122     33.3122    -28.0408       -22.627
+ZMUNI4_PCT               less_than     -11.533     22.3133     34.6356     34.6356    -29.1547       -6.8414
+ZMUNI5_PCT               less_than     -20.813     16.6144     37.5122     37.5122    -31.5761      -14.9617
+ZMUNI6_PCT               less_than     -18.573     20.0801     39.1156     39.1156    -32.9258      -12.8457
+ZMUNI7_PCT               less_than     -32.193     3.98787     38.9847     38.9847    -32.8156      -28.8277
+ZMUNI8_PCT               less_than     -28.603     9.27913     40.5544     40.5544    -34.1369      -24.8578
+ZMUNI9_PCT               less_than     -24.393     21.8225     51.0648     51.0648    -42.9841      -21.1616
+  note: 'offset' is the value added to the simulated constraint/objective value to account
+        for the uncertainty in the constraint/objective value arsing from uncertainty in the 
+        adjustable parameters identified in the control file.
+         The 'required' value only applies to constraint quantities.
+
+number of nonzero elements in response matrix: 81 of 81
+
+  observation constraint/objective information at start of iteration 4
+name                         sense    required      sim value       residual    lower bound    upper bound
+ZMUNI1_PCT               less_than     -20.027       -17.6126       -2.41442  -1.79769e+308       -2.41442
+ZMUNI2_PCT               less_than     -21.054       -20.3577      -0.696275  -1.79769e+308      -0.696275
+ZMUNI3_PCT               less_than     -22.994        -22.627      -0.367038  -1.79769e+308      -0.367038
+ZMUNI4_PCT               less_than     -11.533        -6.8414        -4.6916  -1.79769e+308        -4.6916
+ZMUNI5_PCT               less_than     -20.813       -14.9617       -5.85128  -1.79769e+308       -5.85128
+ZMUNI6_PCT               less_than     -18.573       -12.8457        -5.7273  -1.79769e+308        -5.7273
+ZMUNI7_PCT               less_than     -32.193       -28.8277       -3.36526  -1.79769e+308       -3.36526
+ZMUNI8_PCT               less_than     -28.603       -24.8578       -3.74524  -1.79769e+308       -3.74524
+ZMUNI9_PCT               less_than     -24.393       -21.1616       -3.23143  -1.79769e+308       -3.23143
+
+   Chance constraint/objective information at start of iteration 4
+name                         sense    required   sim value prior stdev  post stdev      offset new sim value
+ZMUNI1_PCT               less_than     -20.027       13.43     36.8783     36.8783    -31.0425      -17.6126
+ZMUNI2_PCT               less_than     -21.054     6.61587     32.0444     32.0444    -26.9736      -20.3577
+ZMUNI3_PCT               less_than     -22.994     5.41381     33.3122     33.3122    -28.0408       -22.627
+ZMUNI4_PCT               less_than     -11.533     22.3133     34.6356     34.6356    -29.1547       -6.8414
+ZMUNI5_PCT               less_than     -20.813     16.6144     37.5122     37.5122    -31.5761      -14.9617
+ZMUNI6_PCT               less_than     -18.573     20.0801     39.1156     39.1156    -32.9258      -12.8457
+ZMUNI7_PCT               less_than     -32.193     3.98787     38.9847     38.9847    -32.8156      -28.8277
+ZMUNI8_PCT               less_than     -28.603     9.27913     40.5544     40.5544    -34.1369      -24.8578
+ZMUNI9_PCT               less_than     -24.393     21.8225     51.0648     51.0648    -42.9841      -21.1616
+  note: 'offset' is the value added to the simulated constraint/objective value to account
+        for the uncertainty in the constraint/objective value arsing from uncertainty in the 
+        adjustable parameters identified in the control file.
+         The 'required' value only applies to constraint quantities.
+
+  ---  solving linear program for iteration 4  ---  
+ iteration 4 linear solution is proven optimal
+
+
+  ---  linear program solution complete for iteration 4  ---  
+  ---  processing results for iteration 4 LP solution  ---  
+
+
+
+     decision variable information at end of SLP iteration 4
+
+name                        current            new   objfunc coef    cur contrib    new contrib   reduced cost           simplex status
+QMUNI1                   0.00169849      0.0016354              1     0.00169849      0.0016354             -0                    basic
+QMUNI2                   0.00117833     0.00117762              1     0.00117833     0.00117762             -0                    basic
+QMUNI3                   0.00121802     0.00124312              1     0.00121802     0.00124312             -0                    basic
+QMUNI4                  0.000467889     0.00042493              1    0.000467889     0.00042493             -0                    basic
+QMUNI5                   0.00149612     0.00131633              1     0.00149612     0.00131633             -0                    basic
+QMUNI6                   0.00170878     0.00154267              1     0.00170878     0.00154267             -0                    basic
+QMUNI7                   0.00132552     0.00122695              1     0.00132552     0.00122695             -0                    basic
+QMUNI8                   0.00153021     0.00141572              1     0.00153021     0.00141572             -0                    basic
+QMUNI9                   0.00212017     0.00202062              1     0.00212017     0.00202062             -0                    basic
+
+
+  ---  iteration 4 objective function value:       0.0120034  ---  
+
+
+
+     estimated constraint/objective information at end of iteration 4
+
+name                          sense       required    fosm offset        current       residual            new       residual
+ZMUNI1_PCT                less_than        -20.027       -31.0425          13.43        -33.457        -20.027              0
+ZMUNI2_PCT                less_than        -21.054       -26.9736        6.61587       -27.6699        -21.054              0
+ZMUNI3_PCT                less_than        -22.994       -28.0408        5.41381       -28.4078        -22.994              0
+ZMUNI4_PCT                less_than        -11.533       -29.1547        22.3133       -33.8463        -11.533   -5.32907e-15
+ZMUNI5_PCT                less_than        -20.813       -31.5761        16.6144       -37.4274        -20.813   -1.06581e-14
+ZMUNI6_PCT                less_than        -18.573       -32.9258        20.0801       -38.6531        -18.573              0
+ZMUNI7_PCT                less_than        -32.193       -32.8156        3.98787       -36.1809        -32.193   -7.10543e-15
+ZMUNI8_PCT                less_than        -28.603       -34.1369        9.27913       -37.8821        -28.603    3.55271e-15
+ZMUNI9_PCT                less_than        -24.393       -42.9841        21.8225       -46.2155        -24.393   -3.55271e-15
+  ---  running the model once with optimal decision var values
+
+
+     simulated constraint/objective information at end of iteration 4
+
+name                          sense       required    fosm offset        current       residual            new       residual
+ZMUNI1_PCT                less_than        -20.027       -31.0425          13.43        -33.457       -19.9134      -0.113609
+ZMUNI2_PCT                less_than        -21.054       -26.9736        6.61587       -27.6699        -20.907      -0.147007
+ZMUNI3_PCT                less_than        -22.994       -28.0408        5.41381       -28.4078       -22.8715       -0.12245
+ZMUNI4_PCT                less_than        -11.533       -29.1547        22.3133       -33.8463       -11.4508     -0.0822121
+ZMUNI5_PCT                less_than        -20.813       -31.5761        16.6144       -37.4274       -20.8032    -0.00984913
+ZMUNI6_PCT                less_than        -18.573       -32.9258        20.0801       -38.6531       -18.4852     -0.0877899
+ZMUNI7_PCT                less_than        -32.193       -32.8156        3.98787       -36.1809       -31.9091      -0.283927
+ZMUNI8_PCT                less_than        -28.603       -34.1369        9.27913       -37.8821       -28.2452      -0.357756
+ZMUNI9_PCT                less_than        -24.393       -42.9841        21.8225       -46.2155       -23.8954      -0.497581
+
+  ---  convergence check iteration 4  ---  
+
+-->                     ++opt_iter_tol:          0.001
+-->scaled max decision variable change:     0.00221972
+-->      scaled  max constraint change:        5.84143
+-->   scaled objective function change:    0.000740165
+-->the following constraints are not satisfied (distance shown):
+-->   ZMUNI1_PCT       0.113609
+-->   ZMUNI2_PCT       0.147007
+-->   ZMUNI3_PCT        0.12245
+-->   ZMUNI4_PCT      0.0822121
+-->   ZMUNI6_PCT      0.0877899
+-->   ZMUNI7_PCT       0.283927
+-->   ZMUNI8_PCT       0.357756
+-->   ZMUNI9_PCT       0.497581
+
+
+  ---------------------------------
+  --- starting LP iteration 5  ---  
+  ---------------------------------
+
+
+  ---  calculating response matrix for iteration 5  ---  
+
+saving iteration 5 reponse matrix to file: 0_20_pestpp_opt_priorunc.5.jcb
+  ---  calculating FOSM-based chance constraint/objective components  ---  
+  ---   done with FOSM-based chance constraint/objective calculations  ---  
+
+
+   Chance constraint/objective information at start of iteration 5
+name                         sense    required   sim value prior stdev  post stdev      offset new sim value
+ZMUNI1_PCT               less_than     -20.027     11.1291     35.4996     35.4996     -29.882      -18.7528
+ZMUNI2_PCT               less_than     -21.054      6.0666     29.4021     29.4021    -24.7494      -18.6828
+ZMUNI3_PCT               less_than     -22.994     5.16922     30.7764     30.7764    -25.9062       -20.737
+ZMUNI4_PCT               less_than     -11.533     17.7039     33.7828     33.7828    -28.4369      -10.7329
+ZMUNI5_PCT               less_than     -20.813      10.773     34.3668     34.3668    -28.9285      -18.1555
+ZMUNI6_PCT               less_than     -18.573     14.4406     35.9433     35.9433    -30.2555       -15.815
+ZMUNI7_PCT               less_than     -32.193     0.90654     31.9806     31.9806    -26.9198      -26.0133
+ZMUNI8_PCT               less_than     -28.603     5.89164     31.4024     31.4024    -26.4332      -20.5415
+ZMUNI9_PCT               less_than     -24.393     19.0887     41.6029     41.6029    -35.0195      -15.9308
+  note: 'offset' is the value added to the simulated constraint/objective value to account
+        for the uncertainty in the constraint/objective value arsing from uncertainty in the 
+        adjustable parameters identified in the control file.
+         The 'required' value only applies to constraint quantities.
+
+number of nonzero elements in response matrix: 81 of 81
+
+  observation constraint/objective information at start of iteration 5
+name                         sense    required      sim value       residual    lower bound    upper bound
+ZMUNI1_PCT               less_than     -20.027       -18.7528       -1.27417  -1.79769e+308       -1.27417
+ZMUNI2_PCT               less_than     -21.054       -18.6828       -2.37122  -1.79769e+308       -2.37122
+ZMUNI3_PCT               less_than     -22.994        -20.737       -2.25704  -1.79769e+308       -2.25704
+ZMUNI4_PCT               less_than     -11.533       -10.7329      -0.800095  -1.79769e+308      -0.800095
+ZMUNI5_PCT               less_than     -20.813       -18.1555       -2.65752  -1.79769e+308       -2.65752
+ZMUNI6_PCT               less_than     -18.573        -15.815       -2.75804  -1.79769e+308       -2.75804
+ZMUNI7_PCT               less_than     -32.193       -26.0133       -6.17971  -1.79769e+308       -6.17971
+ZMUNI8_PCT               less_than     -28.603       -20.5415       -8.06148  -1.79769e+308       -8.06148
+ZMUNI9_PCT               less_than     -24.393       -15.9308        -8.4622  -1.79769e+308        -8.4622
+
+   Chance constraint/objective information at start of iteration 5
+name                         sense    required   sim value prior stdev  post stdev      offset new sim value
+ZMUNI1_PCT               less_than     -20.027     11.1291     35.4996     35.4996     -29.882      -18.7528
+ZMUNI2_PCT               less_than     -21.054      6.0666     29.4021     29.4021    -24.7494      -18.6828
+ZMUNI3_PCT               less_than     -22.994     5.16922     30.7764     30.7764    -25.9062       -20.737
+ZMUNI4_PCT               less_than     -11.533     17.7039     33.7828     33.7828    -28.4369      -10.7329
+ZMUNI5_PCT               less_than     -20.813      10.773     34.3668     34.3668    -28.9285      -18.1555
+ZMUNI6_PCT               less_than     -18.573     14.4406     35.9433     35.9433    -30.2555       -15.815
+ZMUNI7_PCT               less_than     -32.193     0.90654     31.9806     31.9806    -26.9198      -26.0133
+ZMUNI8_PCT               less_than     -28.603     5.89164     31.4024     31.4024    -26.4332      -20.5415
+ZMUNI9_PCT               less_than     -24.393     19.0887     41.6029     41.6029    -35.0195      -15.9308
+  note: 'offset' is the value added to the simulated constraint/objective value to account
+        for the uncertainty in the constraint/objective value arsing from uncertainty in the 
+        adjustable parameters identified in the control file.
+         The 'required' value only applies to constraint quantities.
+
+  ---  solving linear program for iteration 5  ---  
+ iteration 5 linear solution is proven optimal
+
+
+  ---  linear program solution complete for iteration 5  ---  
+  ---  processing results for iteration 5 LP solution  ---  
+
+
+
+     decision variable information at end of SLP iteration 5
+
+name                        current            new   objfunc coef    cur contrib    new contrib   reduced cost           simplex status
+QMUNI1                    0.0016354     0.00162931              1      0.0016354     0.00162931             -0                    basic
+QMUNI2                   0.00117762     0.00112977              1     0.00117762     0.00112977             -0                    basic
+QMUNI3                   0.00124312     0.00119865              1     0.00124312     0.00119865             -0                    basic
+QMUNI4                   0.00042493    0.000426877              1     0.00042493    0.000426877             -0                    basic
+QMUNI5                   0.00131633     0.00123702              1     0.00131633     0.00123702             -0                    basic
+QMUNI6                   0.00154267     0.00146414              1     0.00154267     0.00146414             -0                    basic
+QMUNI7                   0.00122695     0.00102937              1     0.00122695     0.00102937             -0                    basic
+QMUNI8                   0.00141572     0.00113958              1     0.00141572     0.00113958             -0                    basic
+QMUNI9                   0.00202062     0.00170684              1     0.00202062     0.00170684             -0                    basic
+
+
+  ---  iteration 5 objective function value:       0.0109616  ---  
+
+
+
+     estimated constraint/objective information at end of iteration 5
+
+name                          sense       required    fosm offset        current       residual            new       residual
+ZMUNI1_PCT                less_than        -20.027        -29.882        11.1291       -31.1561        -20.027   -3.55271e-15
+ZMUNI2_PCT                less_than        -21.054       -24.7494         6.0666       -27.1206        -21.054   -3.55271e-15
+ZMUNI3_PCT                less_than        -22.994       -25.9062        5.16922       -28.1632        -22.994   -3.55271e-15
+ZMUNI4_PCT                less_than        -11.533       -28.4369        17.7039       -29.2369        -11.533    5.32907e-15
+ZMUNI5_PCT                less_than        -20.813       -28.9285         10.773        -31.586        -20.813   -3.55271e-15
+ZMUNI6_PCT                less_than        -18.573       -30.2555        14.4406       -33.0136        -18.573   -7.10543e-15
+ZMUNI7_PCT                less_than        -32.193       -26.9198        0.90654       -33.0995        -32.193   -1.42109e-14
+ZMUNI8_PCT                less_than        -28.603       -26.4332        5.89164       -34.4946        -28.603              0
+ZMUNI9_PCT                less_than        -24.393       -35.0195        19.0887       -43.4817        -24.393   -3.55271e-15
+  ---  running the model once with optimal decision var values
+
+
+     simulated constraint/objective information at end of iteration 5
+
+name                          sense       required    fosm offset        current       residual            new       residual
+ZMUNI1_PCT                less_than        -20.027        -29.882        11.1291       -31.1561       -20.1055      0.0785134
+ZMUNI2_PCT                less_than        -21.054       -24.7494         6.0666       -27.1206       -21.1295      0.0755411
+ZMUNI3_PCT                less_than        -22.994       -25.9062        5.16922       -28.1632       -23.0755       0.081457
+ZMUNI4_PCT                less_than        -11.533       -28.4369        17.7039       -29.2369       -11.6107       0.077711
+ZMUNI5_PCT                less_than        -20.813       -28.9285         10.773        -31.586       -20.8381      0.0250899
+ZMUNI6_PCT                less_than        -18.573       -30.2555        14.4406       -33.0136       -18.5951      0.0221413
+ZMUNI7_PCT                less_than        -32.193       -26.9198        0.90654       -33.0995       -32.0281      -0.164886
+ZMUNI8_PCT                less_than        -28.603       -26.4332        5.89164       -34.4946       -28.3885      -0.214471
+ZMUNI9_PCT                less_than        -24.393       -35.0195        19.0887       -43.4817       -23.9938      -0.399165
+
+  ---  convergence check iteration 5  ---  
+
+-->                     ++opt_iter_tol:          0.001
+-->scaled max decision variable change:      0.0023344
+-->      scaled  max constraint change:        8.06303
+-->   scaled objective function change:     0.00104181
+-->the following constraints are not satisfied (distance shown):
+-->   ZMUNI7_PCT       0.164886
+-->   ZMUNI8_PCT       0.214471
+-->   ZMUNI9_PCT       0.399165
+
+  ---  objective function sequence  ---   
+ iteration       obj func
+         0         0.0045
+         1      0.0114187
+         2      0.0109849
+         3      0.0127435
+         4      0.0120034
+         5      0.0109616
+  ---  best objective function value: 0.0127435
+  ---  running model one last time with best decision variables  ---  
+Number of forward model runs performed during optimization: 387
+started at 10/23/21 02:47:11
+finished at 10/23/21 05:08:24
+took 141.217 minutes

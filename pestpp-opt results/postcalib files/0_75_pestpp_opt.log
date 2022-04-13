@@ -1,0 +1,69 @@
+time,elapsed_seconds,message
+2021-10-21 22:15:03,2.4321e-05,PEST++ performance logger started
+2021-10-21 22:15:03,0.000234732,starting to process control file
+2021-10-21 22:15:03,0.00815317,finished processing control file
+2021-10-21 22:15:03,0.00429758,initializing constraints
+2021-10-21 22:15:03,0.000214041,initializing chance constraints/objectives
+2021-10-21 22:32:19,1036.24,set_predictions
+2021-10-21 22:32:19,3.8712e-05,extracting prediction ZMUNI1_PCT from jacobian
+2021-10-21 22:32:19,0.00142788,extracting prediction ZMUNI2_PCT from jacobian
+2021-10-21 22:32:19,0.00115654,extracting prediction ZMUNI3_PCT from jacobian
+2021-10-21 22:32:19,0.00115184,extracting prediction ZMUNI4_PCT from jacobian
+2021-10-21 22:32:19,0.00113422,extracting prediction ZMUNI5_PCT from jacobian
+2021-10-21 22:32:19,0.00112205,extracting prediction ZMUNI6_PCT from jacobian
+2021-10-21 22:32:19,0.00111576,extracting prediction ZMUNI7_PCT from jacobian
+2021-10-21 22:32:19,0.00111727,extracting prediction ZMUNI8_PCT from jacobian
+2021-10-21 22:32:19,0.00110663,extracting prediction ZMUNI9_PCT from jacobian
+2021-10-21 22:32:19,0.00109906,LinearAnalysis::prior_prediction_variance
+2021-10-21 22:32:19,0.000146601,LinearAnalysis::prior_prediction_variance
+2021-10-21 22:32:19,8.899e-06,LinearAnalysis::calc_posterior
+2021-10-21 22:32:19,6.695e-06,LinearAnalysis::align
+2021-10-21 22:32:19,1.9272e-05,LinearAnalysis::prior_prediction_variance()::invert obscov
+2021-10-21 22:32:19,6.105e-06,inverting diagonal matrix in place
+2021-10-21 22:32:19,1.1715e-05,LinearAnalysis::calc_posterior() form JtQJ
+2021-10-21 22:32:19,0.000837755,LinearAnalysis::calc_posterior() invert prior parcov
+2021-10-21 22:32:19,0.000299546,LinearAnalysis::calc_posterior() form posterior parcov
+2021-10-21 22:32:19,3.3094e-05,LinearAnalysis::calc_posterior() invert posterior parcov
+2021-10-21 22:32:19,6.535e-06,inverting non-diagonal matrix in place
+2021-10-21 22:58:21,1561.75,set_predictions
+2021-10-21 22:58:21,4.7064e-05,extracting prediction ZMUNI1_PCT from jacobian
+2021-10-21 22:58:21,0.00138323,extracting prediction ZMUNI2_PCT from jacobian
+2021-10-21 22:58:21,0.00115716,extracting prediction ZMUNI3_PCT from jacobian
+2021-10-21 22:58:21,0.00115884,extracting prediction ZMUNI4_PCT from jacobian
+2021-10-21 22:58:21,0.0011317,extracting prediction ZMUNI5_PCT from jacobian
+2021-10-21 22:58:21,0.00112749,extracting prediction ZMUNI6_PCT from jacobian
+2021-10-21 22:58:21,0.0011217,extracting prediction ZMUNI7_PCT from jacobian
+2021-10-21 22:58:21,0.00111261,extracting prediction ZMUNI8_PCT from jacobian
+2021-10-21 22:58:21,0.00110659,extracting prediction ZMUNI9_PCT from jacobian
+2021-10-21 22:58:21,0.00110553,LinearAnalysis::prior_prediction_variance
+2021-10-21 22:58:21,0.000151266,LinearAnalysis::prior_prediction_variance
+2021-10-21 22:58:21,9.156e-06,LinearAnalysis::calc_posterior
+2021-10-21 22:58:21,6.483e-06,LinearAnalysis::align
+2021-10-21 22:58:21,1.8485e-05,LinearAnalysis::prior_prediction_variance()::invert obscov
+2021-10-21 22:58:21,6.459e-06,inverting diagonal matrix in place
+2021-10-21 22:58:21,1.1865e-05,LinearAnalysis::calc_posterior() form JtQJ
+2021-10-21 22:58:21,0.000831984,LinearAnalysis::calc_posterior() invert prior parcov
+2021-10-21 22:58:21,0.000298275,LinearAnalysis::calc_posterior() form posterior parcov
+2021-10-21 22:58:21,3.4171e-05,LinearAnalysis::calc_posterior() invert posterior parcov
+2021-10-21 22:58:21,6.688e-06,inverting non-diagonal matrix in place
+2021-10-21 23:24:30,1569.7,set_predictions
+2021-10-21 23:24:30,3.9019e-05,extracting prediction ZMUNI1_PCT from jacobian
+2021-10-21 23:24:30,0.00128633,extracting prediction ZMUNI2_PCT from jacobian
+2021-10-21 23:24:30,0.00115386,extracting prediction ZMUNI3_PCT from jacobian
+2021-10-21 23:24:30,0.00114399,extracting prediction ZMUNI4_PCT from jacobian
+2021-10-21 23:24:30,0.00113613,extracting prediction ZMUNI5_PCT from jacobian
+2021-10-21 23:24:30,0.00113112,extracting prediction ZMUNI6_PCT from jacobian
+2021-10-21 23:24:30,0.00112803,extracting prediction ZMUNI7_PCT from jacobian
+2021-10-21 23:24:30,0.0011152,extracting prediction ZMUNI8_PCT from jacobian
+2021-10-21 23:24:30,0.00111296,extracting prediction ZMUNI9_PCT from jacobian
+2021-10-21 23:24:30,0.00110187,LinearAnalysis::prior_prediction_variance
+2021-10-21 23:24:30,0.000144703,LinearAnalysis::prior_prediction_variance
+2021-10-21 23:24:30,8.167e-06,LinearAnalysis::calc_posterior
+2021-10-21 23:24:30,6.364e-06,LinearAnalysis::align
+2021-10-21 23:24:30,1.8238e-05,LinearAnalysis::prior_prediction_variance()::invert obscov
+2021-10-21 23:24:30,6.04e-06,inverting diagonal matrix in place
+2021-10-21 23:24:30,1.2014e-05,LinearAnalysis::calc_posterior() form JtQJ
+2021-10-21 23:24:30,0.000841121,LinearAnalysis::calc_posterior() invert prior parcov
+2021-10-21 23:24:30,0.00030329,LinearAnalysis::calc_posterior() form posterior parcov
+2021-10-21 23:24:30,3.4232e-05,LinearAnalysis::calc_posterior() invert posterior parcov
+2021-10-21 23:24:30,6.098e-06,inverting non-diagonal matrix in place

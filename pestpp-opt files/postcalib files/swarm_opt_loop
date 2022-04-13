@@ -1,0 +1,39 @@
+#!/bin/bash
+# usage : swarm_opt_loop pestpp_opt.pst
+
+for i in 01 {05..95..05} 96 97 98 99
+do
+	#echo "0_$i""_""pestpp_opt.pst" #OK
+	#echo "0_$i"_queen.out #OK idem "0_$i""_queen.out"
+	
+	# Launch PESTPP-OPT in queen directory
+	pestpp-opt "0_$i""_""$1" /H :4002 > "0_$i""_queen.out" 2>&1 &
+	_pid=$!
+	echo "pestpp master at $_pid"
+	sleep 5
+	
+	# go to parent dir and remove old workers in hive
+	cd ../
+	rm -rf hive/*
+	
+	# Launch new workers
+	for (( bee=0; bee<12; bee++ ))
+	do
+		mkdir hive/worker$bee
+		cp -r drone/* hive/worker$bee
+		cp  queen/"0_$i""_""$1" hive/worker$bee/
+		cd hive/worker$bee
+		pestpp-opt "0_$i""_""$1" /H hydrolix:4002 > worker.out 2>&1 &
+		cd ../../
+	done
+	
+	# return to queen dir
+	cd queen
+	
+	# swarm to numerix
+	swarm_numerix "0_$i""_""$1"
+	
+	wait "$_pid"
+
+done
+

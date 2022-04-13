@@ -1,0 +1,406 @@
+
+PANTHER master listening on socket:0.0.0.0:4002 (IPv4)
+running model 10 times
+10/21/21 15:14:55->waiting for agents to appear
+
+10/21/21 15:15:01->new connection from: localhost:50822
+10/21/21 15:15:01->initializing new agent connection from: localhost$/srv/common/idm/pest/hive/worker0:localhost:50822, number of agents: 1
+10/21/21 15:15:01->new connection from: localhost:50824
+10/21/21 15:15:01->initializing new agent connection from: localhost$/srv/common/idm/pest/hive/worker1:localhost:50824, number of agents: 2
+10/21/21 15:15:01->new connection from: localhost:50826
+10/21/21 15:15:01->initializing new agent connection from: localhost$/srv/common/idm/pest/hive/worker2:localhost:50826, number of agents: 3
+10/21/21 15:15:01->new connection from: localhost:50828
+10/21/21 15:15:01->initializing new agent connection from: localhost$/srv/common/idm/pest/hive/worker3:localhost:50828, number of agents: 4
+10/21/21 15:15:01->new connection from: localhost:50830
+10/21/21 15:15:01->initializing new agent connection from: localhost$/srv/common/idm/pest/hive/worker4:localhost:50830, number of agents: 5
+10/21/21 15:15:01->new connection from: localhost:50832
+10/21/21 15:15:01->initializing new agent connection from: localhost$/srv/common/idm/pest/hive/worker5:localhost:50832, number of agents: 6
+10/21/21 15:15:01->new connection from: localhost:50834
+10/21/21 15:15:01->initializing new agent connection from: localhost$/srv/common/idm/pest/hive/worker6:localhost:50834, number of agents: 7
+10/21/21 15:15:01->new connection from: localhost:50836
+10/21/21 15:15:01->initializing new agent connection from: localhost$/srv/common/idm/pest/hive/worker7:localhost:50836, number of agents: 8
+10/21/21 15:15:02->new agent ready: localhost$/srv/common/idm/pest/hive/worker0:localhost:50822
+10/21/21 15:15:02->Sending run 0 to: localhost$/srv/common/idm/pest/hive/worker0  (group id:2, run id:0, concurrent runs:1)
+10/21/21 15:15:02->new connection from: localhost:50838
+10/21/21 15:15:02->initializing new agent connection from: localhost$/srv/common/idm/pest/hive/worker8:localhost:50838, number of agents: 9
+10/21/21 15:15:02->new agent ready: localhost$/srv/common/idm/pest/hive/worker1:localhost:50824
+10/21/21 15:15:02->Sending run 1 to: localhost$/srv/common/idm/pest/hive/worker1  (group id:2, run id:1, concurrent runs:1)
+10/21/21 15:15:02->new connection from: localhost:50840
+10/21/21 15:15:02->initializing new agent connection from: localhost$/srv/common/idm/pest/hive/worker9:localhost:50840, number of agents: 10
+10/21/21 15:15:02->new agent ready: localhost$/srv/common/idm/pest/hive/worker2:localhost:50826
+10/21/21 15:15:02->Sending run 2 to: localhost$/srv/common/idm/pest/hive/worker2  (group id:2, run id:2, concurrent runs:1)
+10/21/21 15:15:02->new connection from: localhost:50842
+10/21/21 15:15:02->initializing new agent connection from: localhost$/srv/common/idm/pest/hive/worker10:localhost:50842, number of agents: 11
+10/21/21 15:15:02->new connection from: localhost:50844
+10/21/21 15:15:02->initializing new agent connection from: localhost$/srv/common/idm/pest/hive/worker11:localhost:50844, number of agents: 12
+10/21/21 15:15:02->new agent ready: localhost$/srv/common/idm/pest/hive/worker3:localhost:50828
+10/21/21 15:15:02->Sending run 3 to: localhost$/srv/common/idm/pest/hive/worker3  (group id:2, run id:3, concurrent runs:1)
+10/21/21 15:15:02->new agent ready: localhost$/srv/common/idm/pest/hive/worker4:localhost:50830
+10/21/21 15:15:02->Sending run 4 to: localhost$/srv/common/idm/pest/hive/worker4  (group id:2, run id:4, concurrent runs:1)
+10/21/21 15:15:02->new agent ready: localhost$/srv/common/idm/pest/hive/worker5:localhost:50832
+10/21/21 15:15:02->Sending run 5 to: localhost$/srv/common/idm/pest/hive/worker5  (group id:2, run id:5, concurrent runs:1)
+10/21/21 15:15:02->new agent ready: localhost$/srv/common/idm/pest/hive/worker6:localhost:50834
+10/21/21 15:15:02->Sending run 6 to: localhost$/srv/common/idm/pest/hive/worker6  (group id:2, run id:6, concurrent runs:1)
+10/21/21 15:15:03->new agent ready: localhost$/srv/common/idm/pest/hive/worker7:localhost:50836
+10/21/21 15:15:03->Sending run 7 to: localhost$/srv/common/idm/pest/hive/worker7  (group id:2, run id:7, concurrent runs:1)
+10/21/21 15:15:03->new agent ready: localhost$/srv/common/idm/pest/hive/worker8:localhost:50838
+10/21/21 15:15:03->Sending run 8 to: localhost$/srv/common/idm/pest/hive/worker8  (group id:2, run id:8, concurrent runs:1)
+10/21/21 15:15:03->new agent ready: localhost$/srv/common/idm/pest/hive/worker10:localhost:50842
+10/21/21 15:15:03->Sending run 9 to: localhost$/srv/common/idm/pest/hive/worker10  (group id:2, run id:9, concurrent runs:1)
+10/21/21 15:15:03->new agent ready: localhost$/srv/common/idm/pest/hive/worker9:localhost:50840
+10/21/21 15:15:03->new agent ready: localhost$/srv/common/idm/pest/hive/worker11:localhost:50844
+10/21/21 15:15:11->new connection from: numerix.zut.ipb.fr:54828
+10/21/21 15:15:11->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker0:numerix.zut.ipb.fr:54828, number of agents: 13
+10/21/21 15:15:11->new connection from: numerix.zut.ipb.fr:54830
+10/21/21 15:15:11->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker1:numerix.zut.ipb.fr:54830, number of agents: 14
+10/21/21 15:15:11->new connection from: numerix.zut.ipb.fr:54832
+10/21/21 15:15:11->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker2:numerix.zut.ipb.fr:54832, number of agents: 15
+10/21/21 15:15:11->new connection from: numerix.zut.ipb.fr:54834
+10/21/21 15:15:11->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker3:numerix.zut.ipb.fr:54834, number of agents: 16
+10/21/21 15:15:11->new connection from: numerix.zut.ipb.fr:54836
+10/21/21 15:15:11->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker4:numerix.zut.ipb.fr:54836, number of agents: 17
+10/21/21 15:15:11->new connection from: numerix.zut.ipb.fr:54838
+10/21/21 15:15:11->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker5:numerix.zut.ipb.fr:54838, number of agents: 18
+10/21/21 15:15:11->new connection from: numerix.zut.ipb.fr:54840
+10/21/21 15:15:11->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker6:numerix.zut.ipb.fr:54840, number of agents: 19
+10/21/21 15:15:11->new connection from: numerix.zut.ipb.fr:54842
+10/21/21 15:15:11->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker7:numerix.zut.ipb.fr:54842, number of agents: 20
+10/21/21 15:15:11->new connection from: numerix.zut.ipb.fr:54844
+10/21/21 15:15:11->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker8:numerix.zut.ipb.fr:54844, number of agents: 21
+10/21/21 15:15:11->new connection from: numerix.zut.ipb.fr:54846
+10/21/21 15:15:11->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker9:numerix.zut.ipb.fr:54846, number of agents: 22
+10/21/21 15:15:11->new connection from: numerix.zut.ipb.fr:54848
+10/21/21 15:15:11->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker10:numerix.zut.ipb.fr:54848, number of agents: 23
+10/21/21 15:15:11->new connection from: numerix.zut.ipb.fr:54850
+10/21/21 15:15:11->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker11:numerix.zut.ipb.fr:54850, number of agents: 24
+10/21/21 15:15:11->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker0:numerix.zut.ipb.fr:54828
+10/21/21 15:15:11->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker1:numerix.zut.ipb.fr:54830
+10/21/21 15:15:11->new connection from: numerix.zut.ipb.fr:54852
+10/21/21 15:15:11->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker12:numerix.zut.ipb.fr:54852, number of agents: 25
+10/21/21 15:15:11->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker2:numerix.zut.ipb.fr:54832
+10/21/21 15:15:11->new connection from: numerix.zut.ipb.fr:54854
+10/21/21 15:15:11->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker13:numerix.zut.ipb.fr:54854, number of agents: 26
+10/21/21 15:15:11->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker3:numerix.zut.ipb.fr:54834
+10/21/21 15:15:11->new connection from: numerix.zut.ipb.fr:54856
+10/21/21 15:15:11->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker14:numerix.zut.ipb.fr:54856, number of agents: 27
+10/21/21 15:15:11->new connection from: numerix.zut.ipb.fr:54858
+10/21/21 15:15:11->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker15:numerix.zut.ipb.fr:54858, number of agents: 28
+10/21/21 15:15:11->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker4:numerix.zut.ipb.fr:54836
+10/21/21 15:15:12->new connection from: numerix.zut.ipb.fr:54860
+10/21/21 15:15:12->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker16:numerix.zut.ipb.fr:54860, number of agents: 29
+10/21/21 15:15:12->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker5:numerix.zut.ipb.fr:54838
+10/21/21 15:15:12->new connection from: numerix.zut.ipb.fr:54862
+10/21/21 15:15:12->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker17:numerix.zut.ipb.fr:54862, number of agents: 30
+10/21/21 15:15:12->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker6:numerix.zut.ipb.fr:54840
+10/21/21 15:15:12->new connection from: numerix.zut.ipb.fr:54864
+10/21/21 15:15:12->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker18:numerix.zut.ipb.fr:54864, number of agents: 31
+10/21/21 15:15:12->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker7:numerix.zut.ipb.fr:54842
+10/21/21 15:15:12->new connection from: numerix.zut.ipb.fr:54866
+10/21/21 15:15:12->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker19:numerix.zut.ipb.fr:54866, number of agents: 32
+10/21/21 15:15:12->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker8:numerix.zut.ipb.fr:54844
+10/21/21 15:15:12->new connection from: numerix.zut.ipb.fr:54868
+10/21/21 15:15:12->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker20:numerix.zut.ipb.fr:54868, number of agents: 33
+10/21/21 15:15:12->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker9:numerix.zut.ipb.fr:54846
+10/21/21 15:15:12->new connection from: numerix.zut.ipb.fr:54870
+10/21/21 15:15:12->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker21:numerix.zut.ipb.fr:54870, number of agents: 34
+10/21/21 15:15:12->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker10:numerix.zut.ipb.fr:54848
+10/21/21 15:15:12->new connection from: numerix.zut.ipb.fr:54872
+10/21/21 15:15:12->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker22:numerix.zut.ipb.fr:54872, number of agents: 35
+10/21/21 15:15:12->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker11:numerix.zut.ipb.fr:54850
+10/21/21 15:15:12->new connection from: numerix.zut.ipb.fr:54874
+10/21/21 15:15:12->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker23:numerix.zut.ipb.fr:54874, number of agents: 36
+10/21/21 15:15:12->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker12:numerix.zut.ipb.fr:54852
+10/21/21 15:15:12->new connection from: numerix.zut.ipb.fr:54876
+10/21/21 15:15:12->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker24:numerix.zut.ipb.fr:54876, number of agents: 37
+10/21/21 15:15:12->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker13:numerix.zut.ipb.fr:54854
+10/21/21 15:15:12->new connection from: numerix.zut.ipb.fr:54878
+10/21/21 15:15:12->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker25:numerix.zut.ipb.fr:54878, number of agents: 38
+10/21/21 15:15:12->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker14:numerix.zut.ipb.fr:54856
+10/21/21 15:15:12->new connection from: numerix.zut.ipb.fr:54880
+10/21/21 15:15:12->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker26:numerix.zut.ipb.fr:54880, number of agents: 39
+10/21/21 15:15:12->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker15:numerix.zut.ipb.fr:54858
+10/21/21 15:15:12->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker16:numerix.zut.ipb.fr:54860
+10/21/21 15:15:12->new connection from: numerix.zut.ipb.fr:54882
+10/21/21 15:15:12->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker27:numerix.zut.ipb.fr:54882, number of agents: 40
+10/21/21 15:15:12->new connection from: numerix.zut.ipb.fr:54884
+10/21/21 15:15:12->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker28:numerix.zut.ipb.fr:54884, number of agents: 41
+10/21/21 15:15:12->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker17:numerix.zut.ipb.fr:54862
+10/21/21 15:15:12->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker18:numerix.zut.ipb.fr:54864
+10/21/21 15:15:12->new connection from: numerix.zut.ipb.fr:54886
+10/21/21 15:15:12->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker29:numerix.zut.ipb.fr:54886, number of agents: 42
+10/21/21 15:15:12->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker19:numerix.zut.ipb.fr:54866
+10/21/21 15:15:12->new connection from: numerix.zut.ipb.fr:54888
+10/21/21 15:15:12->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker30:numerix.zut.ipb.fr:54888, number of agents: 43
+10/21/21 15:15:12->new connection from: numerix.zut.ipb.fr:54890
+10/21/21 15:15:12->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker31:numerix.zut.ipb.fr:54890, number of agents: 44
+10/21/21 15:15:12->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker20:numerix.zut.ipb.fr:54868
+10/21/21 15:15:12->new connection from: numerix.zut.ipb.fr:54892
+10/21/21 15:15:12->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker32:numerix.zut.ipb.fr:54892, number of agents: 45
+10/21/21 15:15:12->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker21:numerix.zut.ipb.fr:54870
+10/21/21 15:15:12->new connection from: numerix.zut.ipb.fr:54894
+10/21/21 15:15:12->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker33:numerix.zut.ipb.fr:54894, number of agents: 46
+10/21/21 15:15:12->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker22:numerix.zut.ipb.fr:54872
+10/21/21 15:15:12->new connection from: numerix.zut.ipb.fr:54896
+10/21/21 15:15:12->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker34:numerix.zut.ipb.fr:54896, number of agents: 47
+10/21/21 15:15:12->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker23:numerix.zut.ipb.fr:54874
+10/21/21 15:15:13->new connection from: numerix.zut.ipb.fr:54898
+10/21/21 15:15:13->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker35:numerix.zut.ipb.fr:54898, number of agents: 48
+10/21/21 15:15:13->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker24:numerix.zut.ipb.fr:54876
+10/21/21 15:15:13->new connection from: numerix.zut.ipb.fr:54900
+10/21/21 15:15:13->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker36:numerix.zut.ipb.fr:54900, number of agents: 49
+10/21/21 15:15:13->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker25:numerix.zut.ipb.fr:54878
+10/21/21 15:15:13->new connection from: numerix.zut.ipb.fr:54902
+10/21/21 15:15:13->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker37:numerix.zut.ipb.fr:54902, number of agents: 50
+10/21/21 15:15:13->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker26:numerix.zut.ipb.fr:54880
+10/21/21 15:15:13->new connection from: numerix.zut.ipb.fr:54904
+10/21/21 15:15:13->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker38:numerix.zut.ipb.fr:54904, number of agents: 51
+10/21/21 15:15:13->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker27:numerix.zut.ipb.fr:54882
+10/21/21 15:15:13->new connection from: numerix.zut.ipb.fr:54906
+10/21/21 15:15:13->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker39:numerix.zut.ipb.fr:54906, number of agents: 52
+10/21/21 15:15:13->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker28:numerix.zut.ipb.fr:54884
+10/21/21 15:15:13->new connection from: numerix.zut.ipb.fr:54908
+10/21/21 15:15:13->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker40:numerix.zut.ipb.fr:54908, number of agents: 53
+10/21/21 15:15:13->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker29:numerix.zut.ipb.fr:54886
+10/21/21 15:15:13->new connection from: numerix.zut.ipb.fr:54910
+10/21/21 15:15:13->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker41:numerix.zut.ipb.fr:54910, number of agents: 54
+10/21/21 15:15:13->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker30:numerix.zut.ipb.fr:54888
+10/21/21 15:15:13->new connection from: numerix.zut.ipb.fr:54912
+10/21/21 15:15:13->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker42:numerix.zut.ipb.fr:54912, number of agents: 55
+10/21/21 15:15:13->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker31:numerix.zut.ipb.fr:54890
+10/21/21 15:15:13->new connection from: numerix.zut.ipb.fr:54914
+10/21/21 15:15:13->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker43:numerix.zut.ipb.fr:54914, number of agents: 56
+10/21/21 15:15:13->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker32:numerix.zut.ipb.fr:54892
+10/21/21 15:15:13->new connection from: numerix.zut.ipb.fr:54916
+10/21/21 15:15:13->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker44:numerix.zut.ipb.fr:54916, number of agents: 57
+10/21/21 15:15:13->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker33:numerix.zut.ipb.fr:54894
+10/21/21 15:15:13->new connection from: numerix.zut.ipb.fr:54918
+10/21/21 15:15:13->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker45:numerix.zut.ipb.fr:54918, number of agents: 58
+10/21/21 15:15:13->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker34:numerix.zut.ipb.fr:54896
+10/21/21 15:15:13->new connection from: numerix.zut.ipb.fr:54920
+10/21/21 15:15:13->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker46:numerix.zut.ipb.fr:54920, number of agents: 59
+10/21/21 15:15:13->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker35:numerix.zut.ipb.fr:54898
+10/21/21 15:15:13->new connection from: numerix.zut.ipb.fr:54922
+10/21/21 15:15:13->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker47:numerix.zut.ipb.fr:54922, number of agents: 60
+10/21/21 15:15:13->new connection from: numerix.zut.ipb.fr:54924
+10/21/21 15:15:13->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker48:numerix.zut.ipb.fr:54924, number of agents: 61
+10/21/21 15:15:13->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker36:numerix.zut.ipb.fr:54900
+10/21/21 15:15:13->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker37:numerix.zut.ipb.fr:54902
+10/21/21 15:15:13->new connection from: numerix.zut.ipb.fr:54926
+10/21/21 15:15:13->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker49:numerix.zut.ipb.fr:54926, number of agents: 62
+10/21/21 15:15:13->new connection from: numerix.zut.ipb.fr:54928
+10/21/21 15:15:13->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker50:numerix.zut.ipb.fr:54928, number of agents: 63
+10/21/21 15:15:13->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker38:numerix.zut.ipb.fr:54904
+10/21/21 15:15:13->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker39:numerix.zut.ipb.fr:54906
+10/21/21 15:15:13->new connection from: numerix.zut.ipb.fr:54930
+10/21/21 15:15:13->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker51:numerix.zut.ipb.fr:54930, number of agents: 64
+10/21/21 15:15:13->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker40:numerix.zut.ipb.fr:54908
+10/21/21 15:15:13->new connection from: numerix.zut.ipb.fr:54932
+10/21/21 15:15:13->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker52:numerix.zut.ipb.fr:54932, number of agents: 65
+10/21/21 15:15:13->new connection from: numerix.zut.ipb.fr:54934
+10/21/21 15:15:13->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker53:numerix.zut.ipb.fr:54934, number of agents: 66
+10/21/21 15:15:13->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker41:numerix.zut.ipb.fr:54910
+10/21/21 15:15:13->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker42:numerix.zut.ipb.fr:54912
+10/21/21 15:15:13->new connection from: numerix.zut.ipb.fr:54936
+10/21/21 15:15:13->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker54:numerix.zut.ipb.fr:54936, number of agents: 67
+10/21/21 15:15:13->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker43:numerix.zut.ipb.fr:54914
+10/21/21 15:15:13->new connection from: numerix.zut.ipb.fr:54938
+10/21/21 15:15:13->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker55:numerix.zut.ipb.fr:54938, number of agents: 68
+10/21/21 15:15:14->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker44:numerix.zut.ipb.fr:54916
+10/21/21 15:15:14->new connection from: numerix.zut.ipb.fr:54940
+10/21/21 15:15:14->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker56:numerix.zut.ipb.fr:54940, number of agents: 69
+10/21/21 15:15:14->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker45:numerix.zut.ipb.fr:54918
+10/21/21 15:15:14->new connection from: numerix.zut.ipb.fr:54942
+10/21/21 15:15:14->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker57:numerix.zut.ipb.fr:54942, number of agents: 70
+10/21/21 15:15:14->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker46:numerix.zut.ipb.fr:54920
+10/21/21 15:15:14->new connection from: numerix.zut.ipb.fr:54944
+10/21/21 15:15:14->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker58:numerix.zut.ipb.fr:54944, number of agents: 71
+10/21/21 15:15:14->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker47:numerix.zut.ipb.fr:54922
+10/21/21 15:15:14->new connection from: numerix.zut.ipb.fr:54946
+10/21/21 15:15:14->initializing new agent connection from: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker59:numerix.zut.ipb.fr:54946, number of agents: 72
+10/21/21 15:15:14->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker48:numerix.zut.ipb.fr:54924
+10/21/21 15:15:14->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker49:numerix.zut.ipb.fr:54926
+10/21/21 15:15:14->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker50:numerix.zut.ipb.fr:54928
+10/21/21 15:15:14->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker51:numerix.zut.ipb.fr:54930
+10/21/21 15:15:14->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker52:numerix.zut.ipb.fr:54932
+10/21/21 15:15:14->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker53:numerix.zut.ipb.fr:54934
+10/21/21 15:15:14->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker54:numerix.zut.ipb.fr:54936
+10/21/21 15:15:14->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker55:numerix.zut.ipb.fr:54938
+10/21/21 15:15:14->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker56:numerix.zut.ipb.fr:54940
+10/21/21 15:15:14->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker57:numerix.zut.ipb.fr:54942
+10/21/21 15:15:14->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker58:numerix.zut.ipb.fr:54944
+10/21/21 15:15:14->new agent ready: numerix.zut.ipb.fr$/srv/common/idm/pest/hive/worker59:numerix.zut.ipb.fr:54946
+10/21/21 15:25:25->run 1 received from: localhost$/srv/common/idm/pest/hive/worker1  (run time:10.3901 min, avg run time:10.3901 min, group id:2, run id: 1 concurrent:1)
+10/21/21 15:25:25->run 1 processed
+10/21/21 15:25:25->run 4 received from: localhost$/srv/common/idm/pest/hive/worker4  (run time:10.3895 min, avg run time:10.3898 min, group id:2, run id: 4 concurrent:1)
+10/21/21 15:25:25->run 4 processed
+10/21/21 15:25:28->run 6 received from: localhost$/srv/common/idm/pest/hive/worker6  (run time:10.4227 min, avg run time:10.4008 min, group id:2, run id: 6 concurrent:1)
+10/21/21 15:25:28->run 6 processed
+10/21/21 15:25:29->run 7 received from: localhost$/srv/common/idm/pest/hive/worker7  (run time:10.4395 min, avg run time:10.4105 min, group id:2, run id: 7 concurrent:1)
+10/21/21 15:25:29->run 7 processed
+10/21/21 15:25:29->run 3 received from: localhost$/srv/common/idm/pest/hive/worker3  (run time:10.4553 min, avg run time:10.4194 min, group id:2, run id: 3 concurrent:1)
+10/21/21 15:25:29->run 3 processed
+10/21/21 15:25:30->run 0 received from: localhost$/srv/common/idm/pest/hive/worker0  (run time:10.4721 min, avg run time:10.4282 min, group id:2, run id: 0 concurrent:1)
+10/21/21 15:25:30->run 0 processed
+10/21/21 15:25:30->run 9 received from: localhost$/srv/common/idm/pest/hive/worker10  (run time:10.4557 min, avg run time:10.4321 min, group id:2, run id: 9 concurrent:1)
+10/21/21 15:25:30->run 9 processed
+10/21/21 15:25:30->run 2 received from: localhost$/srv/common/idm/pest/hive/worker2  (run time:10.4723 min, avg run time:10.4372 min, group id:2, run id: 2 concurrent:1)
+10/21/21 15:25:30->run 2 processed
+10/21/21 15:25:31->run 5 received from: localhost$/srv/common/idm/pest/hive/worker5  (run time:10.4723 min, avg run time:10.4411 min, group id:2, run id: 5 concurrent:1)
+10/21/21 15:25:31->run 5 processed
+10/21/21 15:25:31->run 8 received from: localhost$/srv/common/idm/pest/hive/worker8  (run time:10.4727 min, avg run time:10.4442 min, group id:2, run id: 8 concurrent:1)
+10/21/21 15:25:31->run 8 processed
+
+---------------------
+   10 runs complete :  0 runs failed
+   10.4 avg run time (min) : 10.6 run mgr time (min)
+   72 agents connected
+
+
+
+10/21/21 15:25:34->Started idle ping thread.
+10/21/21 15:25:34->Panther idle ping thread resumed.
+10/21/21 15:25:35->Panther idle ping thread paused prior to scheduling runs.
+running model 1 times
+10/21/21 15:25:35->    72 agents ready
+
+10/21/21 15:25:35->Sending run 10 to: localhost$/srv/common/idm/pest/hive/worker0  (group id:2, run id:10, concurrent runs:1)
+10/21/21 15:34:40->run 10 received from: localhost$/srv/common/idm/pest/hive/worker0  (run time:9.0876 min, avg run time:9.0876 min, group id:2, run id: 10 concurrent:1)
+10/21/21 15:34:40->run 10 processed
+
+---------------------
+   1 runs complete :  0 runs failed
+   9.09 avg run time (min) : 9.14 run mgr time (min)
+   72 agents connected
+
+
+
+10/21/21 15:34:43->Panther idle ping thread resumed.
+10/21/21 15:34:43->Panther idle ping thread paused prior to scheduling runs.
+running model 9 times
+10/21/21 15:34:43->    72 agents ready
+
+10/21/21 15:34:43->Sending run 1 to: localhost$/srv/common/idm/pest/hive/worker0  (group id:3, run id:1, concurrent runs:1)
+10/21/21 15:34:43->Sending run 2 to: localhost$/srv/common/idm/pest/hive/worker1  (group id:3, run id:2, concurrent runs:1)
+10/21/21 15:34:43->Sending run 3 to: localhost$/srv/common/idm/pest/hive/worker2  (group id:3, run id:3, concurrent runs:1)
+10/21/21 15:34:43->Sending run 4 to: localhost$/srv/common/idm/pest/hive/worker3  (group id:3, run id:4, concurrent runs:1)
+10/21/21 15:34:43->Sending run 5 to: localhost$/srv/common/idm/pest/hive/worker4  (group id:3, run id:5, concurrent runs:1)
+10/21/21 15:34:43->Sending run 6 to: localhost$/srv/common/idm/pest/hive/worker5  (group id:3, run id:6, concurrent runs:1)
+10/21/21 15:34:43->Sending run 7 to: localhost$/srv/common/idm/pest/hive/worker6  (group id:3, run id:7, concurrent runs:1)
+10/21/21 15:34:43->Sending run 8 to: localhost$/srv/common/idm/pest/hive/worker7  (group id:3, run id:8, concurrent runs:1)
+10/21/21 15:34:43->Sending run 9 to: localhost$/srv/common/idm/pest/hive/worker8  (group id:3, run id:9, concurrent runs:1)
+10/21/21 15:44:45->run 1 received from: localhost$/srv/common/idm/pest/hive/worker0  (run time:10.0375 min, avg run time:10.0375 min, group id:3, run id: 1 concurrent:1)
+10/21/21 15:44:45->run 1 processed
+10/21/21 15:44:45->run 4 received from: localhost$/srv/common/idm/pest/hive/worker3  (run time:10.0376 min, avg run time:10.0376 min, group id:3, run id: 4 concurrent:1)
+10/21/21 15:44:45->run 4 processed
+10/21/21 15:44:47->run 8 received from: localhost$/srv/common/idm/pest/hive/worker7  (run time:10.0709 min, avg run time:10.0487 min, group id:3, run id: 8 concurrent:1)
+10/21/21 15:44:47->run 8 processed
+10/21/21 15:44:49->run 6 received from: localhost$/srv/common/idm/pest/hive/worker5  (run time:10.1044 min, avg run time:10.0626 min, group id:3, run id: 6 concurrent:1)
+10/21/21 15:44:49->run 6 processed
+10/21/21 15:45:08->run 9 received from: localhost$/srv/common/idm/pest/hive/worker8  (run time:10.4198 min, avg run time:10.134 min, group id:3, run id: 9 concurrent:1)
+10/21/21 15:45:08->run 9 processed
+10/21/21 15:45:09->run 7 received from: localhost$/srv/common/idm/pest/hive/worker6  (run time:10.4367 min, avg run time:10.1845 min, group id:3, run id: 7 concurrent:1)
+10/21/21 15:45:09->run 7 processed
+10/21/21 15:45:09->run 2 received from: localhost$/srv/common/idm/pest/hive/worker1  (run time:10.4382 min, avg run time:10.2207 min, group id:3, run id: 2 concurrent:1)
+10/21/21 15:45:09->run 2 processed
+10/21/21 15:45:12->run 5 received from: localhost$/srv/common/idm/pest/hive/worker4  (run time:10.4868 min, avg run time:10.254 min, group id:3, run id: 5 concurrent:1)
+10/21/21 15:45:12->run 5 processed
+10/21/21 15:45:15->run 3 received from: localhost$/srv/common/idm/pest/hive/worker2  (run time:10.5369 min, avg run time:10.2854 min, group id:3, run id: 3 concurrent:1)
+10/21/21 15:45:15->run 3 processed
+
+---------------------
+   9 runs complete :  0 runs failed
+   10.3 avg run time (min) : 10.6 run mgr time (min)
+   72 agents connected
+
+
+
+10/21/21 15:45:18->Panther idle ping thread resumed.
+10/21/21 15:45:18->Panther idle ping thread paused prior to scheduling runs.
+running model 1 times
+10/21/21 15:45:18->    72 agents ready
+
+10/21/21 15:45:18->Sending run 10 to: localhost$/srv/common/idm/pest/hive/worker0  (group id:3, run id:10, concurrent runs:1)
+10/21/21 15:54:24->run 10 received from: localhost$/srv/common/idm/pest/hive/worker0  (run time:9.08702 min, avg run time:9.08702 min, group id:3, run id: 10 concurrent:1)
+10/21/21 15:54:24->run 10 processed
+
+---------------------
+   1 runs complete :  0 runs failed
+   9.09 avg run time (min) : 9.12 run mgr time (min)
+   72 agents connected
+
+
+
+10/21/21 15:54:26->Panther idle ping thread resumed.
+10/21/21 15:54:26->Panther idle ping thread paused prior to scheduling runs.
+running model 9 times
+10/21/21 15:54:26->    72 agents ready
+
+10/21/21 15:54:26->Sending run 1 to: localhost$/srv/common/idm/pest/hive/worker0  (group id:4, run id:1, concurrent runs:1)
+10/21/21 15:54:26->Sending run 2 to: localhost$/srv/common/idm/pest/hive/worker1  (group id:4, run id:2, concurrent runs:1)
+10/21/21 15:54:26->Sending run 3 to: localhost$/srv/common/idm/pest/hive/worker2  (group id:4, run id:3, concurrent runs:1)
+10/21/21 15:54:26->Sending run 4 to: localhost$/srv/common/idm/pest/hive/worker3  (group id:4, run id:4, concurrent runs:1)
+10/21/21 15:54:26->Sending run 5 to: localhost$/srv/common/idm/pest/hive/worker4  (group id:4, run id:5, concurrent runs:1)
+10/21/21 15:54:26->Sending run 6 to: localhost$/srv/common/idm/pest/hive/worker5  (group id:4, run id:6, concurrent runs:1)
+10/21/21 15:54:26->Sending run 7 to: localhost$/srv/common/idm/pest/hive/worker6  (group id:4, run id:7, concurrent runs:1)
+10/21/21 15:54:26->Sending run 8 to: localhost$/srv/common/idm/pest/hive/worker7  (group id:4, run id:8, concurrent runs:1)
+10/21/21 15:54:26->Sending run 9 to: localhost$/srv/common/idm/pest/hive/worker8  (group id:4, run id:9, concurrent runs:1)
+10/21/21 16:04:28->run 3 received from: localhost$/srv/common/idm/pest/hive/worker2  (run time:10.0361 min, avg run time:10.0361 min, group id:4, run id: 3 concurrent:1)
+10/21/21 16:04:28->run 3 processed
+10/21/21 16:04:28->run 6 received from: localhost$/srv/common/idm/pest/hive/worker5  (run time:10.0379 min, avg run time:10.037 min, group id:4, run id: 6 concurrent:1)
+10/21/21 16:04:28->run 6 processed
+10/21/21 16:04:29->run 1 received from: localhost$/srv/common/idm/pest/hive/worker0  (run time:10.0528 min, avg run time:10.0423 min, group id:4, run id: 1 concurrent:1)
+10/21/21 16:04:29->run 1 processed
+10/21/21 16:04:30->run 7 received from: localhost$/srv/common/idm/pest/hive/worker6  (run time:10.0702 min, avg run time:10.0493 min, group id:4, run id: 7 concurrent:1)
+10/21/21 16:04:30->run 7 processed
+10/21/21 16:04:51->run 4 received from: localhost$/srv/common/idm/pest/hive/worker3  (run time:10.4202 min, avg run time:10.1235 min, group id:4, run id: 4 concurrent:1)
+10/21/21 16:04:51->run 4 processed
+10/21/21 16:04:52->run 2 received from: localhost$/srv/common/idm/pest/hive/worker1  (run time:10.437 min, avg run time:10.1757 min, group id:4, run id: 2 concurrent:1)
+10/21/21 16:04:52->run 2 processed
+10/21/21 16:04:54->run 8 received from: localhost$/srv/common/idm/pest/hive/worker7  (run time:10.4703 min, avg run time:10.2178 min, group id:4, run id: 8 concurrent:1)
+10/21/21 16:04:54->run 8 processed
+10/21/21 16:04:54->run 5 received from: localhost$/srv/common/idm/pest/hive/worker4  (run time:10.4711 min, avg run time:10.2495 min, group id:4, run id: 5 concurrent:1)
+10/21/21 16:04:54->run 5 processed
+10/21/21 16:04:55->run 9 received from: localhost$/srv/common/idm/pest/hive/worker8  (run time:10.487 min, avg run time:10.2759 min, group id:4, run id: 9 concurrent:1)
+10/21/21 16:04:55->run 9 processed
+
+---------------------
+   9 runs complete :  0 runs failed
+   10.3 avg run time (min) : 10.5 run mgr time (min)
+   72 agents connected
+
+
+
+10/21/21 16:04:58->Panther idle ping thread resumed.
+10/21/21 16:04:58->Panther idle ping thread paused prior to scheduling runs.
+running model 1 times
+10/21/21 16:04:58->    72 agents ready
+
+10/21/21 16:04:58->Sending run 10 to: localhost$/srv/common/idm/pest/hive/worker0  (group id:4, run id:10, concurrent runs:1)
+10/21/21 16:14:01->run 10 received from: localhost$/srv/common/idm/pest/hive/worker0  (run time:9.05358 min, avg run time:9.05358 min, group id:4, run id: 10 concurrent:1)
+10/21/21 16:14:01->run 10 processed
+
+---------------------
+   1 runs complete :  0 runs failed
+   9.05 avg run time (min) : 9.1 run mgr time (min)
+   72 agents connected
+
+
+
+10/21/21 16:14:04->Panther idle ping thread resumed.
+10/21/21 16:14:04->Panther idle ping thread paused prior to scheduling runs.
+running model 1 times
+10/21/21 16:14:04->    72 agents ready
+
+10/21/21 16:14:04->Sending run 11 to: localhost$/srv/common/idm/pest/hive/worker0  (group id:4, run id:11, concurrent runs:1)
+10/21/21 16:23:06->run 11 received from: localhost$/srv/common/idm/pest/hive/worker0  (run time:9.03717 min, avg run time:9.03717 min, group id:4, run id: 11 concurrent:1)
+10/21/21 16:23:06->run 11 processed
+
+---------------------
+   1 runs complete :  0 runs failed
+   9.04 avg run time (min) : 9.07 run mgr time (min)
+   72 agents connected
+
+
+
+10/21/21 16:23:08->Panther idle ping thread resumed.
+10/21/21 16:23:08->Stopped idle ping thread, as Panther manager is shutting down.
