@@ -1,9 +1,0 @@
-#!/bin/bash
-# usage : swarm_numerix case.pst
-
-send2numerix
-
-dist_command="source /etc/profile;cd /srv/common/idm/pest/;./swarm2hydrolix $1"
-
-ssh $USER@numerix.ensegid.fr "$dist_command"
-
